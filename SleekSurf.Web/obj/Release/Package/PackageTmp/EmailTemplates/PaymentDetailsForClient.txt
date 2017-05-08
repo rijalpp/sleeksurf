@@ -1,0 +1,35 @@
+﻿<div style="height: 100px; background-position: left;">
+        <img src="<%Logo%>" width="250" height="100" alt="logo" />
+    </div>
+    <div style="width: 665px; margin: 20px 0px; background-color: #ffffff;">
+        <div style="border: 1px solid #83c5fc;">
+            <div style="color: #FFF; font-size: 18px; padding: 10px 20px; background-color: #4fa8f3;
+                background: #4fa8f3 url('<%TopBackGround%>') repeat-x top; display: block;">
+                Your Payment Details</div>
+            <div style="padding: 20px;">
+                <span style="margin: 0px; padding: 10px 0px; display: block;">Dear&nbsp;<%ClientName%>,
+                </span><span style="margin: 0px; padding: 10px 0px; display: block;">
+                     Thanks for buying the package from us.<br />
+                    Your recently bought/renewed package summary is as follows:</span> <span style="margin: 0px;
+                        padding: 10px 0px; display: block;">
+                        <span style="width: 120px; display: inline-block;">TransactionID</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%TransactionID%></span><br />
+						<span style="width: 120px; display: inline-block;">Package Name</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%PackageName%></span><br />
+						<span style="width: 120px; display: inline-block;">Package Option</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%PackageOption%></span><br />
+						<span style="width: 120px; display: inline-block;">Amount Paid</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%AmountPaid%></span><br />
+						<span style="width: 120px; display: inline-block;">Registration Date</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%RegistrationDate%></span><br />
+						<span style="width: 120px; display: inline-block;">Expiry Date</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%ExpiryDate%></span><br />
+						<span style="width: 120px; display: inline-block;">Payment Status</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%PaymentStatus%></span><br />
+						<span style="width: 120px; display: inline-block;">Payment Method</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%PaymentMethod%></span><br />
+                    </span><span style="margin: 0px; padding: 10px 0px; display: block;">Thanks
+                </span><span style="margin: 0px; padding: 10px 0px; display: block;"><%SenderName%> <br /><%SenderCompany%></span>
+            </div>
+        </div>
+    </div>

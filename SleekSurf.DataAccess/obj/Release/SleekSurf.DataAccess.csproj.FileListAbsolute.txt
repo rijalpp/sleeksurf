@@ -1,0 +1,9 @@
+F:\SleekSurf\SleekSurf.DataAccess\bin\Release\SleekSurf.DataAccess.dll
+F:\SleekSurf\SleekSurf.DataAccess\bin\Release\SleekSurf.DataAccess.pdb
+F:\SleekSurf\SleekSurf.DataAccess\bin\Release\SleekSurf.Entity.dll
+F:\SleekSurf\SleekSurf.DataAccess\bin\Release\SleekSurf.FrameWork.dll
+F:\SleekSurf\SleekSurf.DataAccess\bin\Release\SleekSurf.Entity.pdb
+F:\SleekSurf\SleekSurf.DataAccess\bin\Release\SleekSurf.FrameWork.pdb
+F:\SleekSurf\SleekSurf.DataAccess\obj\Release\SleekSurf.DataAccess.csprojResolveAssemblyReference.cache
+F:\SleekSurf\SleekSurf.DataAccess\obj\Release\SleekSurf.DataAccess.dll
+F:\SleekSurf\SleekSurf.DataAccess\obj\Release\SleekSurf.DataAccess.pdb

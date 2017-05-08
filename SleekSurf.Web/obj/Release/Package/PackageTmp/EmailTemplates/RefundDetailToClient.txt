@@ -1,0 +1,46 @@
+﻿<div style="height: 100px; background-position: left;">
+        <img src="<%Logo%>" width="250" height="100" alt="logo" />
+    </div>
+    <div style="width: 665px; margin: 20px 0px; background-color: #ffffff;">
+        <div style="border: 1px solid #83c5fc;">
+            <div style="color: #FFF; font-size: 18px; padding: 10px 20px; background-color: #4fa8f3;
+                background: #4fa8f3 url('<%TopBackGround%>') repeat-x top; display: block;">
+                Your Refund Details</div>
+            <div style="padding: 20px;">
+                <span style="margin: 0px; padding: 10px 0px; display: block;">Dear&nbsp;<%ClientName%>,
+                </span><span style="margin: 0px; padding: 10px 0px; display: block;">
+                    Your Package has been refunded. The details of the refunded package are as follows:</span> <span style="margin: 0px;
+                        padding: 10px 0px; display: block;">
+                        <span style="width: 120px; display: inline-block;">TransactionID</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%TransactionID%></span><br />
+						<span style="width: 120px; display: inline-block;">Package Name</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%PackageName%></span><br />
+						<span style="width: 120px; display: inline-block;">Package Option</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%PackageOption%></span><br />
+						<span style="width: 120px; display: inline-block;">Original Exp. Date</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%ExpiryDate%></span><br />
+						<span style="width: 120px; display: inline-block;">You Paid</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%YouPaid%></span><br />
+						<span style="display:block; visibility:<%visible%>">
+						<span style="width: 120px; display: inline-block;">Refund Duration</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%RefundDuration%></span>
+						 </span><br />
+						<span style="width: 120px; display: inline-block;">Cancellation Charge</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%CancellationCharge%></span><br />
+						<span style="width: 120px; display: inline-block;">Refund Amount</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%AmountPaid%></span><br />
+						<span style="width: 120px; display: inline-block;">Refund Date</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%RegistrationDate%></span><br />
+						<span style="width: 120px; display: inline-block;">Refund Status</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%PaymentStatus%></span><br />
+						<span style="width: 120px; display: inline-block;">Refund Method</span> &nbsp;&#58;&nbsp;<span
+                            style="padding-left: 10px; display: inline-block;"><%PaymentMethod%></span><br />
+                    </span>
+					   <span style="margin: 0px; padding: 10px 0px; display: block;"> For any queries about the refund Please contact us.<br />
+					   <span style="style:font-weight:bold;">Note : Refund via Bank Transfer, Bank Cheque could take 2-3 working days. This package expires as of <%RegistrationDate%>.</span>
+                </span>
+					<span style="margin: 0px; padding: 10px 0px; display: block;">Thanks
+                </span><span style="margin: 0px; padding: 10px 0px; display: block;"><%SenderName%> <br /><%SenderCompany%></span>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="625e6ff5-e139-4565-bc11-992c1603de96" name="Prem@PREM-PC 2014-07-21 11:57:50" runUser="Prem-PC\Prem" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="703de9c8-b910-474a-9a8e-8ed25b1f0dbf">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Prem_PREM-PC 2014-07-21 11_57_50">
+      <DeploymentItem filename="F:\SleekSurf\SleekSurf.Entity\bin\Debug\SleekSurf.Entity.dll" />
+      <DeploymentItem filename="F:\SleekSurf\SleekSurf.FrameWork\bin\Debug\SleekSurf.FrameWork.dll" />
+      <DeploymentItem filename="F:\SleekSurf\SleekSurf.Manager\bin\Debug\SleekSurf.Manager.dll" />
+      <DeploymentItem filename="F:\SleekSurf\SleekSurf.DataAccess\bin\Debug\SleekSurf.DataAccess.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-07-21T11:57:50.4719626+10:00" queuing="2014-07-21T11:57:55.7152625+10:00" start="2014-07-21T11:57:55.8502702+10:00" finish="2014-07-21T11:58:08.5429962+10:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="4" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="3" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="PREM-PC" outcome="Error" timestamp="2014-07-21T11:58:08.5419961+10:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="InsertClientTest" storage="f:\sleeksurf\clientmanagertest\bin\debug\clientmanagertest.dll" id="e03c7bc3-9316-c48f-ec82-0695f07fa640">
+      <Execution id="c02bc385-36b7-45f3-b30d-473bb98e883b" />
+      <TestMethod codeBase="F:/SleekSurf/ClientManagerTest/bin/Debug/ClientManagerTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ClientManagerTest.ClientManagerTest, ClientManagerTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InsertClientTest" />
+    </UnitTest>
+    <UnitTest name="HostIpToLocationTest" storage="f:\sleeksurf\clientmanagertest\bin\debug\clientmanagertest.dll" id="9124e6ff-6d08-3767-6305-282a9f4b26c8">
+      <Execution id="2d50f4ea-dd2f-4ef1-9a80-85b303511030" />
+      <TestMethod codeBase="F:/SleekSurf/ClientManagerTest/bin/Debug/ClientManagerTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ClientManagerTest.ClientManagerTest, ClientManagerTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HostIpToLocationTest" />
+    </UnitTest>
+    <UnitTest name="GetCategoriesTest" storage="f:\sleeksurf\clientmanagertest\bin\debug\clientmanagertest.dll" id="63c4ebde-e0d1-0fc6-0fe6-9938c9725f45">
+      <Execution id="2a3b8a58-2ee1-488f-83f8-8bd80c52a300" />
+      <TestMethod codeBase="F:/SleekSurf/ClientManagerTest/bin/Debug/ClientManagerTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ClientManagerTest.ClientManagerTest, ClientManagerTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetCategoriesTest" />
+    </UnitTest>
+    <UnitTest name="UnPublishClientTest" storage="f:\sleeksurf\clientmanagertest\bin\debug\clientmanagertest.dll" id="511b04e6-2681-2853-1d07-b77d14bf7c18">
+      <Execution id="a6006c60-3682-4821-9582-a6943c82fd68" />
+      <TestMethod codeBase="F:/SleekSurf/ClientManagerTest/bin/Debug/ClientManagerTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ClientManagerTest.ClientManagerTest, ClientManagerTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UnPublishClientTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="e03c7bc3-9316-c48f-ec82-0695f07fa640" executionId="c02bc385-36b7-45f3-b30d-473bb98e883b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="63c4ebde-e0d1-0fc6-0fe6-9938c9725f45" executionId="2a3b8a58-2ee1-488f-83f8-8bd80c52a300" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9124e6ff-6d08-3767-6305-282a9f4b26c8" executionId="2d50f4ea-dd2f-4ef1-9a80-85b303511030" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="511b04e6-2681-2853-1d07-b77d14bf7c18" executionId="a6006c60-3682-4821-9582-a6943c82fd68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c02bc385-36b7-45f3-b30d-473bb98e883b" testId="e03c7bc3-9316-c48f-ec82-0695f07fa640" testName="InsertClientTest" computerName="PREM-PC" duration="00:00:12.5667188" startTime="2014-07-21T11:57:55.9762774+10:00" endTime="2014-07-21T11:58:08.5429962+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c02bc385-36b7-45f3-b30d-473bb98e883b">
+    </UnitTestResult>
+    <UnitTestResult executionId="2a3b8a58-2ee1-488f-83f8-8bd80c52a300" testId="63c4ebde-e0d1-0fc6-0fe6-9938c9725f45" testName="GetCategoriesTest" computerName="PREM-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a3b8a58-2ee1-488f-83f8-8bd80c52a300">
+    </UnitTestResult>
+    <UnitTestResult executionId="2d50f4ea-dd2f-4ef1-9a80-85b303511030" testId="9124e6ff-6d08-3767-6305-282a9f4b26c8" testName="HostIpToLocationTest" computerName="PREM-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2d50f4ea-dd2f-4ef1-9a80-85b303511030">
+    </UnitTestResult>
+    <UnitTestResult executionId="a6006c60-3682-4821-9582-a6943c82fd68" testId="511b04e6-2681-2853-1d07-b77d14bf7c18" testName="UnPublishClientTest" computerName="PREM-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6006c60-3682-4821-9582-a6943c82fd68">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C5434D20-23F5-4389-A829-9316E25DADFC}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		SleekSurf.vsmdi = SleekSurf.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleekSurf.WebServices", "SleekSurf.WebServices\SleekSurf.WebServices.csproj", "{644A1B8D-3E32-43CA-AD84-7C6A139B8493}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleekSurf.Domain", "SleekSurf.Domain\SleekSurf.Domain.csproj", "{614DDE0F-992C-4E79-A441-8614336C3288}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleekSurf.DataAccess", "SleekSurf.DataAccess\SleekSurf.DataAccess.csproj", "{C91802B9-ADCB-4B32-B98E-B2DBB7D2A12B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleekSurf.Entity", "SleekSurf.Entity\SleekSurf.Entity.csproj", "{A07CB253-324F-40B7-9959-CD3F06807A72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleekSurf.FrameWork", "SleekSurf.FrameWork\SleekSurf.FrameWork.csproj", "{94C911CC-DA67-490D-A218-4497D7A14754}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleekSurf.Manager", "SleekSurf.Manager\SleekSurf.Manager.csproj", "{BDBDEFDF-3BD2-410B-B01B-E5828E8358D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleekSurf.Web", "SleekSurf.Web\SleekSurf.Web.csproj", "{64BE48A8-2127-4942-8F38-BE95AA8ABD4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientManagerTest", "ClientManagerTest\ClientManagerTest.csproj", "{98D2C1AB-5429-4E63-A9B3-BE7FFA43C280}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{644A1B8D-3E32-43CA-AD84-7C6A139B8493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{644A1B8D-3E32-43CA-AD84-7C6A139B8493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{644A1B8D-3E32-43CA-AD84-7C6A139B8493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{644A1B8D-3E32-43CA-AD84-7C6A139B8493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{614DDE0F-992C-4E79-A441-8614336C3288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{614DDE0F-992C-4E79-A441-8614336C3288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{614DDE0F-992C-4E79-A441-8614336C3288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{614DDE0F-992C-4E79-A441-8614336C3288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C91802B9-ADCB-4B32-B98E-B2DBB7D2A12B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C91802B9-ADCB-4B32-B98E-B2DBB7D2A12B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C91802B9-ADCB-4B32-B98E-B2DBB7D2A12B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C91802B9-ADCB-4B32-B98E-B2DBB7D2A12B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07CB253-324F-40B7-9959-CD3F06807A72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07CB253-324F-40B7-9959-CD3F06807A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07CB253-324F-40B7-9959-CD3F06807A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07CB253-324F-40B7-9959-CD3F06807A72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94C911CC-DA67-490D-A218-4497D7A14754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94C911CC-DA67-490D-A218-4497D7A14754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94C911CC-DA67-490D-A218-4497D7A14754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94C911CC-DA67-490D-A218-4497D7A14754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDBDEFDF-3BD2-410B-B01B-E5828E8358D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDBDEFDF-3BD2-410B-B01B-E5828E8358D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDBDEFDF-3BD2-410B-B01B-E5828E8358D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDBDEFDF-3BD2-410B-B01B-E5828E8358D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64BE48A8-2127-4942-8F38-BE95AA8ABD4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64BE48A8-2127-4942-8F38-BE95AA8ABD4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64BE48A8-2127-4942-8F38-BE95AA8ABD4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64BE48A8-2127-4942-8F38-BE95AA8ABD4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D2C1AB-5429-4E63-A9B3-BE7FFA43C280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D2C1AB-5429-4E63-A9B3-BE7FFA43C280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D2C1AB-5429-4E63-A9B3-BE7FFA43C280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D2C1AB-5429-4E63-A9B3-BE7FFA43C280}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SleekSurf.vsmdi
+	EndGlobalSection
+EndGlobal

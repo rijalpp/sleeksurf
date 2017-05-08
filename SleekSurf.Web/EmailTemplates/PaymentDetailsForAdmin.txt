@@ -1,0 +1,26 @@
+﻿<div style="height:100px; background-position:left;">
+            <img src="<%Logo%>" width="250" height="100" alt="logo" />
+        </div>
+        <div style="width: 665px; margin:20px 0px; background-color: #ffffff;">
+            <div style="border: 1px solid #83c5fc;">
+                <span style="color: #FFF; font-size: 18px; padding:10px 20px; background-color: #4fa8f3; background: #4fa8f3 url('<%TopBackGround%>') repeat-x top; display: block;">The payment is successfully received</span>
+				<div style="padding:20px;">
+					<span style="margin:0px; padding:10px 0px; display:block;">
+						The payment details of Client.
+					</span>
+					<span style="margin:0px; padding:10px 0px; display:block;">
+						<span style="width: 120px; display: inline-block;">Client Name</span>&nbsp;&#58;&nbsp;<span style="padding-left: 10px; display: inline-block;"><%ClientName%></span><br />
+						<span style="width: 120px; display: inline-block;">Contact Person</span>&nbsp;&#58;&nbsp;<span style="padding-left: 10px; display: inline-block;"><%ContactPerson%></span><br />
+						<span style="width: 120px; display: inline-block;">Transaction ID</span>&nbsp;&#58;&nbsp;<span style="padding-left: 10px; display: inline-block;"><%TransactionID%></span><br />
+						<span style="width: 120px; display: inline-block;">Package Name</span>&nbsp;&#58;&nbsp;<span style="padding-left: 10px; display: inline-block;"><%PackageName%></span><br />
+						<span style="width: 120px; display: inline-block;">Package Option</span>&nbsp;&#58;&nbsp;<span style="padding-left: 10px; display: inline-block;"><%PackageOption%></span><br />
+						<span style="width: 120px; display: inline-block;">Amount Paid</span>&nbsp;&#58;&nbsp;<span style="padding-left: 10px; display: inline-block;"><%AmountPaid%></span><br />
+						<span style="width: 120px; display: inline-block;">Registration Date</span>&nbsp;&#58;&nbsp;<span style="padding-left: 10px; display: inline-block;"><%RegistrationDate%></span><br />
+					</span>
+					<span style="margin:0px; padding:10px 0px; display:block;">
+						Thanks </span>
+					<span style="margin:0px; padding:10px 0px; display:block;">
+						SleekSurf Team</span>
+				</div>
+            </div>
+        </div>

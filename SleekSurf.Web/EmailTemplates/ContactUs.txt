@@ -1,0 +1,30 @@
+﻿<div style="height: 100px; background-position: left;">
+        <img src="<%Logo%>" width="250" height="100" alt="logo" />
+    </div>
+    <div style="width: 665px; margin: 20px 0px; background-color: #ffffff;">
+        <div style="border: 1px solid #83c5fc;">
+            <div style="color: #FFF; font-size: 18px; padding: 10px 20px; background-color: #4fa8f3;
+                background: #4fa8f3 url('<%TopBackGround%>') repeat-x top; display: block;">
+                Query from your profile viewer
+            </div>
+            <div style="padding: 20px;">
+                <span style="margin: 0px; padding: 10px 0px; display: block;">Hi&nbsp;<%ReceiverFullName%>,<br />
+                    <br />
+                </span><span style="margin: 0px; padding: 10px 0px; display: block;">
+                    <%SenderFullName%> <%SenderBusinessName%>
+                    has query for you. His/her message is as follows: </span><span style="margin: 0px;
+                        padding: 10px 0px; display: block;">
+                        <%Message%>
+                    </span>
+					<span style="margin: 0px; padding: 10px 0px; display: block;"> Viewer's Other Details are below </span>
+					<span style="margin: 0px; padding: 10px 0px; display: block;">
+					Contact Number: <span style="font-weight: bold;"><%ContactNo%></span><br />
+					Reply email address: <span style="font-weight: bold;"><%ReplyEmail%></span><br />
+					<%WebSite%><br />
+					<%Address%><br />
+                    </span><span style="margin: 0px; padding: 10px 0px; display: block;">
+                        <br />
+                    Thank you. </span>
+            </div>
+        </div>
+    </div>

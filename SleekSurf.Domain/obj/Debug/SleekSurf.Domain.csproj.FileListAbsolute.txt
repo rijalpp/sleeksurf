@@ -1,0 +1,15 @@
+F:\SleekSurf\SleekSurf.Domain\bin\SleekSurf.Domain.dll
+F:\SleekSurf\SleekSurf.Domain\bin\SleekSurf.Domain.pdb
+F:\SleekSurf\SleekSurf.Domain\bin\AjaxControlToolkit.dll
+F:\SleekSurf\SleekSurf.Domain\bin\SleekSurf.Entity.dll
+F:\SleekSurf\SleekSurf.Domain\bin\SleekSurf.FrameWork.dll
+F:\SleekSurf\SleekSurf.Domain\bin\SleekSurf.Manager.dll
+F:\SleekSurf\SleekSurf.Domain\bin\SleekSurf.DataAccess.dll
+F:\SleekSurf\SleekSurf.Domain\bin\SleekSurf.Entity.pdb
+F:\SleekSurf\SleekSurf.Domain\bin\SleekSurf.FrameWork.pdb
+F:\SleekSurf\SleekSurf.Domain\bin\SleekSurf.Manager.pdb
+F:\SleekSurf\SleekSurf.Domain\bin\SleekSurf.DataAccess.pdb
+F:\SleekSurf\SleekSurf.Domain\obj\Debug\SleekSurf.Domain.dll
+F:\SleekSurf\SleekSurf.Domain\obj\Debug\SleekSurf.Domain.pdb
+F:\SleekSurf\SleekSurf.Domain\bin\SleekSurf.Domain.dll.config
+F:\SleekSurf\SleekSurf.Domain\obj\Debug\SleekSurf.Domain.csprojResolveAssemblyReference.cache

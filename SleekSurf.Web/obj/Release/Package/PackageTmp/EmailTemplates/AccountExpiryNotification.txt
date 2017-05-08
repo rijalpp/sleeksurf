@@ -1,0 +1,37 @@
+﻿<div style="height: 100px; background-position: left;">
+        <img src="<%Logo%>" width="250" height="100" alt="logo" />
+    </div>
+    <div style="width: 665px; margin: 20px 0px; background-color: #ffffff;">
+        <div style="border: 1px solid #83c5fc;">
+            <div style="color: #FFF; font-size: 18px; padding: 10px 20px; background-color: #4fa8f3;
+                background: #4fa8f3 url('<%TopBackGround%>') repeat-x top; display: block;">
+                Account Expiration 
+            </div>
+            <div style="padding: 20px;">
+                <span style="margin: 0px; padding: 10px 0px; display: block;">Hi&nbsp;<%CustomerFullName%>,<br />
+                    <br />
+                </span><span style="margin: 0px; padding: 10px 0px; display: block;">
+                    This is a courtesy notification to let you know that your account is coming up for renewal within <%DaysLeft%> days. </span>
+					<span style="margin: 0px; padding: 10px 0px; display: block;">
+                        Business Name: <span style="font-weight: bold;"><%BusinessName%></span>
+                    </span>
+					<span style="margin: 0px; padding: 10px 0px; display: block;">
+                        Package Type: <span style="font-weight: bold;"><%PackageType%></span>
+                    </span>
+					<span style="margin: 0px; padding: 10px 0px; display: block;">
+                        Expiry Date: <span style="font-weight: bold;"><%ExpiryDate%></span>
+                    </span>
+					<span style="margin: 0px; padding: 10px 0px; display: block;">
+					    You will be able to renew your account by logging into your control panel => Account Management tab or by simply purchaging the account from our website as given below.
+                    </span>
+					<span style="margin: 0px; padding: 10px 0px; display: block;">
+                        Website: <span style="font-weight: bold;"><%WebSite%></span>
+                    </span>
+					<span style="margin: 0px; padding: 10px 0px; display: block;">
+                        <br />
+                        Thank you. </span>
+				   <span style="margin: 0px; padding: 10px 0px; display: block;">
+                        SleekSurf Team </span>
+            </div>
+        </div>
+    </div>

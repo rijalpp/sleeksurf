@@ -1,0 +1,13 @@
+F:\SleekSurf\ClientManagerTest\bin\Debug\ClientManagerTest.dll
+F:\SleekSurf\ClientManagerTest\bin\Debug\ClientManagerTest.pdb
+F:\SleekSurf\ClientManagerTest\bin\Debug\SleekSurf.DataAccess.dll
+F:\SleekSurf\ClientManagerTest\bin\Debug\SleekSurf.Entity.dll
+F:\SleekSurf\ClientManagerTest\bin\Debug\SleekSurf.FrameWork.dll
+F:\SleekSurf\ClientManagerTest\bin\Debug\SleekSurf.Manager.dll
+F:\SleekSurf\ClientManagerTest\bin\Debug\SleekSurf.DataAccess.pdb
+F:\SleekSurf\ClientManagerTest\bin\Debug\SleekSurf.Entity.pdb
+F:\SleekSurf\ClientManagerTest\bin\Debug\SleekSurf.FrameWork.pdb
+F:\SleekSurf\ClientManagerTest\bin\Debug\SleekSurf.Manager.pdb
+F:\SleekSurf\ClientManagerTest\obj\Debug\ClientManagerTest.dll
+F:\SleekSurf\ClientManagerTest\obj\Debug\ClientManagerTest.pdb
+F:\SleekSurf\ClientManagerTest\obj\Debug\ClientManagerTest.csprojResolveAssemblyReference.cache

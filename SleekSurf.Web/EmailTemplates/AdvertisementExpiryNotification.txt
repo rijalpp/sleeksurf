@@ -1,0 +1,35 @@
+﻿<div style="height: 100px; background-position: left;">
+        <img src="<%Logo%>" width="250" height="100" alt="logo" />
+    </div>
+    <div style="width: 665px; margin: 20px 0px; background-color: #ffffff;">
+        <div style="border: 1px solid #83c5fc;">
+            <div style="color: #FFF; font-size: 18px; padding: 10px 20px; background-color: #4fa8f3;
+                background: #4fa8f3 url('<%TopBackGround%>') repeat-x top; display: block;">
+                Account Expiration 
+            </div>
+            <div style="padding: 20px;">
+                <span style="margin: 0px; padding: 10px 0px; display: block;">Hi&nbsp;<%Advertiser%>,<br />
+                    <br />
+                </span><span style="margin: 0px; padding: 10px 0px; display: block;">
+                    This is a courtesy notification to let you know that your advertisement is expiring in <%DaysLeft%> days. </span>
+					<span style="margin: 0px; padding: 10px 0px; display: block;">
+                        Ad Title: <span style="font-weight: bold;"><%AdTitle%></span>
+                    </span>
+					<span style="margin: 0px; padding: 10px 0px; display: block;">
+                        Dimension: <span style="font-weight: bold;"><%Dimension%></span>
+                    </span>
+					<span style="margin: 0px; padding: 10px 0px; display: block;">
+                        Expiry Date: <span style="font-weight: bold;"><%ExpiryDate%></span>
+                    </span>
+					<span style="margin: 0px; padding: 10px 0px; display: block;">
+					    You will be able to renew your advertisement by contacting SleekSurf. If you don't respond by the expiry date, your advertisement will be 
+						deactivated or deleted from our system.
+                    </span>
+					<span style="margin: 0px; padding: 10px 0px; display: block;">
+                        <br />
+                        Thank you. </span>
+				   <span style="margin: 0px; padding: 10px 0px; display: block;">
+                        SleekSurf Team </span>
+            </div>
+        </div>
+    </div>

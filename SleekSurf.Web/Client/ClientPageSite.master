@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Client/ClientSite.Master" AutoEventWireup="true"
+    CodeBehind="ClientPageSite.master.cs" Inherits="SleekSurf.Web.Client.ClientPageSite" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script type="text/javascript">
+        $(function () {
+            $("#FooterAds>div:last").each(function () {
+                $(this).css("margin-right", "0px");
+            });
+
+            $("#RightAdvertisements .rightSideAd:last").each(function () {
+                $(this).css("margin-bottom", "0px");
+            });
+        });
+    </script>
+    <div id="PageContent">
+        <div id="PageMainContent">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderPage" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="advertisement">
+            <div id="RightAdvertisements">
+                <asp:Repeater ID="rptrRightAds" runat="server" OnItemDataBound="rptrRightAds_ItemDataBound">
+                    <ItemTemplate>
+                        <div class="rightSideAd">
+                            <a href='<%# Eval("NavigateUrl") %>' target="_blank">
+                                <asp:Image ID="imgAd" runat="server" />
+                            </a>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+                <div class="rightSideAd" id="DefaultRightAd" runat="server" clientidmode="Static"
+                    visible="false">
+                    <a href="http://www.sleeksurf.com" target="_blank">
+                        <asp:Image ID="imgRightAd" ImageUrl="Images/DefaultSleekSurfRightAd.png" runat="server" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ClientFooterAdWrapper">
+        <div id="ClientFooterAdContent">
+            <div id="FooterAdsSection">
+                <div class="advertisementBottom">
+                    <div id="FooterAds">
+                        <asp:Repeater ID="rptrFooterAds" runat="server" OnItemDataBound="rptrFooterAds_ItemDataBound">
+                            <ItemTemplate>
+                                <div class="footerAd">
+                                    <a href='<%# Eval("NavigateUrl") %>' target="_blank">
+                                        <asp:Image ID="imgAd" runat="server" />
+                                    </a>
+                                </div>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                        <div class="footerAd" id="DefaultFooterAd" runat="server" clientidmode="Static" visible="false">
+                            <a href="http://www.sleeksurf.com/webpages/browsepackages.aspx" target="_blank">
+                                <asp:Image ID="imgFooterAd" ImageUrl="Images/DefaultSleekSurfFooterAd.png" runat="server" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>

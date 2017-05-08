@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Default.aspx" title="Home"  description="Home Page" pageTitle="Home - Welcome to ..." roles="public">
+    <siteMapNode url="/Admin/Default.aspx" title="Admin"  description="Admin Home Page" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser, MarketingOfficer">
+      <siteMapNode title="SuperAdmin" roles="SuperAdmin, SuperAdminUser, MarketingOfficer">
+        <siteMapNode url="/Admin/SuperAdmin/UserManagement.aspx" title="UserMgmt" description="User Management Page" pageTitle="User Management Portal - Admin" roles="SuperAdmin, SuperAdminUser" superAdminNav="1" clientAdminNav="0">
+          <siteMapNode url="/Admin/SuperAdmin/NewEditUser.aspx" description="User Management Page" pageTitle="New Edit User Management Portal - Admin" roles="SuperAdmin, SuperAdminUser"/>
+        </siteMapNode>
+        <siteMapNode url="/Admin/SuperAdmin/ClientManagement.aspx" title="ClientMgmt" description="Client Management Page" pageTitle="Client Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, MarketingOfficer" superAdminNav="1">
+          <siteMapNode url="/Admin/SuperAdmin/NewEditClient.aspx" description="Client Management Page" pageTitle="New Edit Client Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, MarketingOfficer"/>
+        </siteMapNode>
+        <siteMapNode url="/Admin/SuperAdmin/CategoryManagement.aspx" title="CategoryMgmt" description="Category Management Page" pageTitle="Category Management Portal - Admin" roles="SuperAdmin, SuperAdminUser" superAdminNav="1">
+          <siteMapNode url="/Admin/SuperAdmin/NewEditCategory.aspx" description="Category Management Page" pageTitle="New Edit Category Management Portal - Admin" roles="SuperAdmin, SuperAdminUser"/>
+        </siteMapNode>
+        <siteMapNode url="/Admin/SuperAdmin/PackageManagement.aspx" title="PackageMgmt" description="Package Management Page" pageTitle="Package Management Portal - Admin" roles="SuperAdmin, SuperAdminUser" superAdminNav="1">
+          <siteMapNode url="/Admin/SuperAdmin/NewEditPackage.aspx" description="Package Management Page" pageTitle="New Edit Package Management Portal - Admin" roles="SuperAdmin, SuperAdminUser"/>
+          <siteMapNode url="/Admin/SuperAdmin/PackageOptionManagement.aspx" description="Package Option Management Page" pageTitle="Package Option Management Portal - Admin" roles="SuperAdmin, SuperAdminUser">
+            <siteMapNode url="/Admin/SuperAdmin/NewEditPackageOption.aspx" description="Package Option Management Page" pageTitle="New Edit Package Option Management Portal - Admin" roles="SuperAdmin, SuperAdminUser"/>
+            <siteMapNode url="/Admin/SuperAdmin/PackageIconManagement.aspx" description="Package Ico Management Page" pageTitle="Package Icon Management Portal - Admin" roles="SuperAdmin, SuperAdminUser"/>
+            <siteMapNode url="/Admin/SuperAdmin/NewEditPackageIcon.aspx" description="Package Ico Management Page" pageTitle="New Edit Package Icon Management Portal - Admin" roles="SuperAdmin, SuperAdminUser"/>
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="/Admin/SuperAdmin/AdvertisementManagement.aspx" title="AdMgmt" description="Advertisement Management Page" pageTitle="Advertisement Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, MarketingOfficer" superAdminNav="1" clientAdminNav="0">
+          <siteMapNode url="/Admin/SuperAdmin/NewEditAdvertisement.aspx"  description="Advertisement Management Page" pageTitle="New Edit Advertisement Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, MarketingOfficer" />
+        </siteMapNode>
+        <siteMapNode url="/Admin/SuperAdmin/PackageOrderManagement.aspx" title="PackageOrderMgmt" description="Package Order Management Page" pageTitle="Package Order Management Portal - Admin" roles="SuperAdmin, SuperAdminUser" superAdminNav="1">
+          <siteMapNode url="/Admin/SuperAdmin/ViewPackageOrderDetails.aspx" description="Package Order Management Page" pageTitle="New Edit Package Order Management Portal - Admin" roles="SuperAdmin, SuperAdminUser"/>
+        </siteMapNode>
+        <siteMapNode url="/Admin/SuperAdmin/FAQGroupManagement.aspx" title="FAQMgmt" description="FAQ Group Management Page" pageTitle="Faq Group Management Portal - Admin" roles="SuperAdmin, SuperAdminUser" superAdminNav="1" clientAdminNav="0"/>
+        <siteMapNode url="/Admin/SuperAdmin/Expirymanagement.aspx" title="ExpiryMgmt" description="Expiry Management Page" pageTitle="Expiry Management Protal - Admin" roles="SuperAdmin, SuperAdminUser"  superAdminNav ="1"/>
+      </siteMapNode>
+
+      <siteMapNode title="ClientAdmin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser, MarketingOfficer">
+
+        <siteMapNode url="/Admin/Client/AccountManagement.aspx" title="AccountMgmt" description="Account Management Page" pageTitle="Account Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin, MarketingOfficer" clientAdminNav="1">
+          <siteMapNode url="/Admin/Client/AccountTransactionManagement.aspx" title="TransactionMgmt"  description="Transaction Management Page" pageTitle="Account Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin" />
+          <siteMapNode url="/Admin/Client/AccountTransactionDetails.aspx" title="TransactionDetails" description="Transaction Details Page" pageTitle="Account Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin" />
+          <siteMapNode url="/Admin/Client/AccountRenew.aspx" title="AccountRenew" description="Renew Account Package Page" pageTitle="Account Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin" />
+          <siteMapNode url="/Admin/Client/RechargeSMS.aspx" title="RechargeSMS" description="Recharge SMS Page" pageTitle="Account Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin" />
+          <siteMapNode url="/Admin/Client/MatchProfile.aspx" title="MatchProfile" description="Adding Client Profile Page" pageTitle="Account Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin" />
+          <siteMapNode url="/Admin/Client/MatchDomain.aspx" title="MatchDomain" description="Adding Client Domain Page" pageTitle="Account Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin" />
+        </siteMapNode>
+        <siteMapNode url="/Admin/Client/UserManagement.aspx" title="UserMgmt" description="User Management Page" pageTitle="User Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin" superAdminNav="0" clientAdminNav="1">
+          <siteMapNode url="/Admin/Client/NewEditUser.aspx"  description="User Management Page" pageTitle="New Edit User Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin" />
+        </siteMapNode>
+
+        <siteMapNode url="/Admin/Client/CustomerManagement.aspx" title="CustomerMgmt" description="Customer Management Page" pageTitle="Customer Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser" clientAdminNav="1">
+          <siteMapNode url="/Admin/Client/NewEditCustomer.aspx"  description="Customer Management Page" pageTitle="New Edit Customer Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser" />
+          <siteMapNode url="/Admin/Client/CustomerGroupManagement.aspx" title="CustomerGMgmt" description="Customer Group Management Page" pageTitle="Customer Group Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser">
+            <siteMapNode url="/Admin/Client/NewEditCustomerGroup.aspx"  description="Customer Management Page" pageTitle="New Edit Customer Group Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser" />
+          </siteMapNode>
+        </siteMapNode>
+
+        <siteMapNode url="/Admin/Client/PromotionManagement.aspx" title="PromotionMgmt" description="Promotion Management Page" pageTitle="Promotion Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser" clientAdminNav="1">
+          <siteMapNode url="/Admin/Client/NewEditPromotion.aspx"  description="Promotion Management Page" pageTitle="New Edit Promotion Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser" />
+          <siteMapNode url="/Admin/Client/PromotionGalleryManagement.aspx" description="Promotion Media Management Page" pageTitle="Promotion Media Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser">
+            <siteMapNode url="/Admin/Client/NewEditPromotionGallery.aspx"  description="Media Management Page" pageTitle="New Edit Promotion Gallery Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser" />
+          </siteMapNode>
+        </siteMapNode>
+
+        <siteMapNode url="/Admin/Client/ServiceManagement.aspx" title="ServiceMgmt" description="Service Management Page" pageTitle="Service Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser" clientAdminNav="1">
+          <siteMapNode url="/Admin/Client/NewEditService.aspx"  description="Service Management Page" pageTitle="New Edit Promotion Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser" />
+        </siteMapNode>
+
+        <siteMapNode url="/Admin/Client/AdvertisementManagement.aspx" title="AdMgmt" description="Advertisement Management Page" pageTitle="Advertisement Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser" superAdminNav="0" clientAdminNav="1">
+          <siteMapNode url="/Admin/Client/NewEditAdvertisement.aspx"  description="Advertisement Management Page" pageTitle="New Edit Advertisement Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser" />
+        </siteMapNode>
+
+        <siteMapNode url="/Admin/Client/FAQGroupManagement.aspx" title="FAQMgmt" description="Faq Management Page" pageTitle="Faq Management Portal - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser" superAdminNav="0" clientAdminNav="1"/>
+        <siteMapNode url="/Admin/Client/ViewEditBusinessProfile.aspx" title="Profile" description="Business Profile Page" pageTitle="Business Profile - Admin" roles="SuperAdmin, SuperAdminUser, Admin" clientAdminNav="1"/>
+      </siteMapNode>
+
+      <siteMapNode url="/Admin/AccessDenied.aspx" title="AccessDeniedAdmin"  description="Admin Access Denied Page" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser, MarketingOfficer"/>
+      <siteMapNode url="/Admin/AdminEditProfile.aspx" title="EditProfileAdmin"  description="Admin Profile Edit Page" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser, MarketingOfficer"/>
+      <siteMapNode url="/Admin/SendEmail.aspx" title="ComposeEmailAdmin"  description="Admin Compose Email Page" pageTitle="Compose Email - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser, MarketingOfficer"/>
+      <siteMapNode url="/Admin/TermsAndConditionsPrivacyPolicy.aspx" title="BusinessTermsAdmin"  description="Admin Business Term Page" pageTitle="Business Terms - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser"/>
+      <siteMapNode url="/Admin/ChangePassword.aspx" title="ChangePassword"  description="Admin Business Term Page" pageTitle="Business Terms - Admin" roles="SuperAdmin, SuperAdminUser, Admin, AdminUser, MarketingOfficer"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

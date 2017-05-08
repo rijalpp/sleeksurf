@@ -1,0 +1,3085 @@
+﻿/************************************* GENERAL SECTION **************************************/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body, .normalBody
+{
+    background-color: #F7F7F7;
+    color: #606060;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font: normal 30px Arial, Verdana, sans-serif , Tahoma, Helvetica;
+    letter-spacing: 0.4px;
+}
+
+h1
+{
+    font-size: 36px;
+}
+
+h2
+{
+    font-size: 30px;
+}
+
+h3
+{
+    font-size: 24px;
+}
+
+h4
+{
+    font-size: 18px;
+}
+
+h5
+{
+    font-size: 16px;
+}
+
+h6
+{
+    font-size: 14px;
+}
+
+a, .anchor
+{
+    color: #484C65;
+    text-decoration: none;
+    outline: 0px;
+}
+
+a:hover
+{
+    color: #999;
+}
+
+.sendMeEmail
+{
+    color: #FFFFFF;
+}
+
+.sendMeEmail:hover
+{
+    color: #FFFFFF;
+    text-decoration:underline;
+}
+
+p
+{
+    color: #606060;
+    margin: 20px 0px;
+    text-align: justify;
+    font: 12px/18px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.paragraph
+{
+    width: 700px;
+    text-align: justify;
+}
+
+label, .label
+{
+    color: #606060;
+    width: 130px;
+    display: inline-block;
+    font-weight: 500;
+    text-align: left;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.labelSendTo
+{
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    width: 180px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    background: #FFFFFF url(Images/DropDownArrow.gif) no-repeat 98% 50%;
+    border: 1px solid #DDD;
+    font-family: Verdana, Arial, Sans-Serif;
+    resize: none;
+}
+
+.labelExample
+{
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.labelForLogin
+{
+    width: 110px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.displayLabel
+{
+    display: inline-block;
+    padding: 0px 5px;
+    color: #77797B;
+}
+
+.extraSmallLabel
+{
+    font-size: 10px;
+    padding-top: 2px;
+    width: 130px;
+    text-align: center;
+}
+
+.search .marginSideBySide
+{
+    margin: 0px 8px;
+}
+
+input[type=text]:focus, input[type=password]:focus
+{
+    background-image: url(Images/TextBoxBackground.png);
+}
+
+.textBox
+{
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    width: 180px;
+    padding: 5px;
+    font-family: Verdana, Arial, Sans-Serif;
+    resize: none;
+}
+
+.textInput
+{
+    padding: 5px;
+    border: 1px solid #e5e5e5;
+    font: 12px Arial, Helevtica, Verdana, san-serif;
+    color: #777777;
+    margin-top: 4px;
+}
+
+.textBoxSearch
+{
+    border: none;
+    background-color: transparent;
+    width: 235px;
+    font-size: 16px;
+    color: #51576b;
+    padding: 6px 4px 4px;
+}
+
+.textBoxSearchDiv
+{
+    background: url(Images/TextBoxBorderBackground.png) no-repeat top left;
+    width: 250px;
+    height: 55px;
+    padding: 3px 0px 0px 3px;
+    overflow: hidden;
+}
+
+.waterMark
+{
+    color: #CCCCCC;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    width: 180px;
+    padding: 5px;
+    font-family: Verdana, Arial, Sans-Serif;
+}
+
+.waterMarkSearch
+{
+    margin: 0px;
+    color: #CCCCCC;
+    letter-spacing: 1px;
+    border: none;
+    font-size: 16px;
+    padding: 6px 4px 4px;
+    width: 94%;
+}
+
+.buttonDirect
+{
+    border: 1px solid #CCCCCC;
+    padding: 5px 10px;
+    background-color: #5C9FFF;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: small-caps bold 12px Ariel, Verdana, Tohama;
+}
+
+.button
+{
+    letter-spacing: 1px;
+    background: none;
+    background: url(Images/ButtonWithHover.png);
+    background-color: transparent;
+    width: 122px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font: bold small-caps 14px Arial, Helvetica, sans-serif;
+}
+
+.button:hover
+{
+    background-position: 0px 35px;
+}
+
+.buttonSearchBusiness
+{
+    background: none;
+    background: url(Images/SearchButtonWithHover.png);
+    background-color: transparent;
+    width: 84px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    color: #2673B5;
+    font: bold small-caps 14px Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    float:left;
+}
+
+.buttonSearchBusinessNearby
+{
+    background: none;
+    background: url(Images/NearbyButtonWithHover.png);
+    background-color: transparent;
+    width: 30px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    float:left;
+}
+
+.buttonSearchBusiness:hover, .buttonSearchBusinessNearby:hover
+{
+    background-position: 0px 35px;
+}
+
+.buttonSearchSmall
+{
+    background: none;
+    background: transparent url(Images/ButtonSmallWithHover.png) top left;
+    width: 99px;
+    height: 29px;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font: bold small-caps 14px Arial, Helvetica, sans-serif;
+}
+
+.buttonSearchSmall:hover
+{
+    background-position: 0px 29px;
+}
+
+.errorValidator
+{
+    color: Red;
+    font-family: Verdana, Arial, Sans-Serif;
+}
+
+.makeInvisible
+{
+    display: none;
+}
+
+.fileUpload
+{
+    width: 180px;
+}
+
+.changeBodyBackGround
+{
+    background: url(Images/Background.jpg);
+}
+
+.noBackGround
+{
+    background: none;
+}
+
+.coloredBackGround
+{
+    background-color: #999;
+}
+
+.showErrorMessage
+{
+    text-align: center;    
+    padding: 15px;
+    font-size: larger;
+}
+
+.showErrorMessage p
+{
+    text-align: center;
+}
+
+.showErrorMessage a
+{
+    color: #5C9FFF;
+}
+
+.showErrorMessage a:hover
+{
+    color: #666666;
+    text-decoration: underline;
+}
+
+.showErrorMessage input
+{
+    outline: 0px;
+    margin-top: 20px;
+}
+
+.adminWrapperSettings
+{
+    background-color: #FFF;
+    min-height: 550px;
+}
+
+.statusPanel
+{
+    text-align: right;
+    padding: 10px 0px;
+    position: relative;
+    display:inline-block;
+    width: 100%;
+}
+
+.statusPanel div
+{
+    float: left;
+}
+
+.statusPanel span
+{
+    padding: 3px 6px;
+    border-right: 2px solid #39A7FF;
+    color: #FFFFFF;
+}
+
+.statusPanel span a
+{
+    color: #FFFFFF;
+}
+
+.statusPanel span a:hover, #LoginHeader .statusPanel span a:hover
+{
+    text-decoration: underline;
+}
+
+#LoginHeader .statusPanel span
+{
+    padding: 3px 6px;
+    border-right: 2px solid #39A7FF;
+    color: #000000;
+}
+
+#LoginHeader .statusPanel span a
+{
+    color: #000000;
+}
+
+.statusPanelFrontEnd
+{
+    text-align: right;
+    position: relative;
+    display: block;
+}
+
+.statusPanelFrontEnd div
+{
+    float: left;
+}
+
+.statusPanelFrontEnd span
+{
+    padding: 3px 6px;
+    border-right: 2px solid #39A7FF;
+    color: #FFFFFF;
+}
+
+.statusPanelFrontEnd span a
+{
+    color: #FFFFFF;
+}
+
+.statusPanelFrontEnd span a:hover
+{
+    text-decoration: underline;
+}
+
+#ProfilePicture
+{
+    clear: both;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    max-height: 85px;
+    overflow:hidden;
+    border: 1px solid #46a8f3;
+}
+
+.smallTitle
+{
+    background: url(Images/HorizontalLine.png) repeat-x;
+    display: block;
+    height: 34px;
+    position: relative;
+    width: 670px;
+}
+
+.smallTitle span
+{
+    background-color: #F6F6F6;
+    font-size: 14px;
+    float: left;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 20px 0 0 10px;
+    padding: 0px 10px;
+    color: #5C9FFF;
+}
+
+.promoHeader, .locationHeader, .businessSeperator
+{
+    background: url(Images/HorizontalLine.png) repeat-x;
+    width: 100%;
+    display: inline-block;
+}
+.promoHeader h2, .locationHeader h2
+{
+    background-color: #FFFFFF !important;
+    line-height: 1em;
+    margin-left: 10px;
+    padding: 10px;
+    color: #5C9FFF;
+    width: 250px;
+}
+
+fieldset
+{
+    padding-bottom: 10px;
+}
+
+legend
+{
+    margin: 12px;
+    padding: 0px 4px;
+    color: #2A96CC;
+    font: normal small-caps 16px Arial, Helvetica, sans-serif;
+}
+
+#StepNavigationBar
+{
+    position: relative;
+    display: inline-block;
+    width: 850px;
+}
+
+#StepNavigationBar span
+{
+    position: relative;
+    left: -17px;
+}
+
+.leftZero
+{
+    left: 0px;
+    border: 1px solid red;
+}
+
+.success
+{
+    background: transparent url(Images/Success20x20.png) no-repeat center left;
+    max-height: 30px;
+    padding: 5px 10px 5px 25px;
+    font-family: 12px;
+    text-align: justify;
+    color: #606060;
+}
+
+.successMsg
+{
+    min-height: 50px;
+    padding: 20px 20px 20px 100px;
+    background: #E2F7DC url(Images/Success.png) no-repeat 10px 15px;
+    border: 1px solid #B3DFA4;
+    font-size: 14px;
+    display: block;
+    text-align: justify;
+}
+
+.error
+{
+    background: transparent url(Images/Error20x20.png) no-repeat center left;
+    max-height: 30px;
+    padding: 5px 10px 5px 25px;
+    font-family: 12px;
+    text-align: justify;
+    color: #606060;
+}
+
+.errorMsg
+{
+    min-height: 50px;
+    padding: 20px 20px 20px 100px;
+    border: 1px solid #FECAD3;
+    background: #FDD9E1 url(Images/Error.png) no-repeat 10px 15px;
+    font-size: 14px;
+    display: block;
+    text-align: justify;
+}
+
+.normalMsg
+{
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+    display: block;
+    border: 1px solid #DDD;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.normalMsg td
+{
+    padding: 20px 20px 20px 100px;
+}
+
+.commandControl
+{
+    clear: both;
+    position: relative;
+    top: 10px;
+    text-align: right;
+    width: 720px;
+    display: block;
+}
+
+.radioButtonList
+{
+    list-style-type: none;
+}
+
+.radioButtonList li
+{
+    float: left;
+}
+
+.radioButtonList li label
+{
+    width: auto;
+    margin: 0px 20px 0px 10px;
+}
+
+.buttonFrontEnd
+{
+    margin: 0px 2px;
+    padding: 7px 10px;
+    color: #FAF7EF;
+    font: bold 14px Arial, Helvetica, sans-serif;
+    border: 1px solid #938D8D;
+    background-color: #444;
+    cursor: pointer;
+}
+
+.buttonFrontEnd:Hover
+{
+    background-color: #555;
+}
+
+.signUp
+{
+    width: 720px;
+    display:inline-block;
+}
+
+.signUp p
+{
+    margin-top: 0px;
+}
+
+/***** Collapsible Panel ******************************************************************/
+
+.cpHeader
+{
+    color: #719DDB;
+    border: 1px solid #719DDB;
+    font: bold 11px auto "Trebuchet MS" , Verdana;
+    font-size: 12px;
+    height: 18px;
+    padding: 4px 10px;
+    cursor: pointer;
+    width: auto;
+    margin-right: 6px;
+}
+
+.cpBody
+{
+    font: normal 11px auto Verdana, Arial;
+    border: 1px solid #719DDB;
+    border-top: none;
+    width: 618px;
+    padding: 4px 10px;
+    text-align: left;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+.cpHeaderWithoutBorder
+{
+    color: #719DDB;
+    font: small-caps 14px auto Arial , Verdana;
+    height: 18px;
+    padding: 4px 0px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    width: auto;
+}
+
+.cpBodyWithoutBorder
+{
+    padding: 4px 0px;
+    text-align: left;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/***** End of Collapsible Panel ************************************************************/
+
+/**** AJAX Calendar ***********************************************************************/
+
+.calandarTheme .ajax__calendar_container
+{
+    background-color: #e2e2e2;
+    border: solid 1px #cccccc;
+}
+.calandarTheme .ajax__calendar_header
+{
+    background-color: #ffffff;
+    margin-bottom: 4px;
+}
+.calandarTheme .ajax__calendar_title, .calandarTheme .ajax__calendar_next, .calandarTheme .ajax__calendar_prev
+{
+    color: #004080;
+    padding-top: 3px;
+}
+.calandarTheme .ajax__calendar_body
+{
+    background-color: #e9e9e9;
+    border: solid 1px #cccccc;
+}
+.calandarTheme .ajax__calendar_dayname
+{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+.calandarTheme .ajax__calendar_day
+{
+    text-align: center;
+}
+.calandarTheme .ajax__calendar_hover .ajax__calendar_day, .calandarTheme .ajax__calendar_hover .ajax__calendar_month, .calandarTheme .ajax__calendar_hover .ajax__calendar_year, .calandarTheme .ajax__calendar_active
+{
+    color: #004080;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+.calandarTheme .ajax__calendar_today
+{
+    font-weight: bold;
+}
+.calandarTheme .ajax__calendar_other, .calandarTheme .ajax__calendar_hover .ajax__calendar_today, .calandarTheme .ajax__calendar_hover .ajax__calendar_title
+{
+    color: #bbbbbb;
+}
+
+/**** End of AJAX Calandar ****************************************************************/
+
+/***** Admin Login Layouts *****************************************************************/
+
+#TopHeader
+{
+    height: 29px;
+    background-image: url(Images/TopBackground.png);
+    background-repeat: repeat-x;
+}
+
+#LoginHeader
+{
+    height: 100px;
+    background-position: left;
+}
+
+#LoginContent, #PasswordRecoveryContent
+{
+    height: 289px;
+    width: 486px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+#LoginContent
+{
+    background: #FFFFFF url(Images/LoginBackground.png) no-repeat;
+}
+
+#LoginContentWithSignUp
+{
+    width: 479px;
+    height: 326px;
+    margin: 20px auto;
+    text-align: center;
+    background: url(Images/LoginBackgroundWithSignUp.png) no-repeat;
+}
+
+#PasswordRecoveryContent
+{
+    text-align: left;
+    background: #FFFFFF url(Images/PasswordRecoveryBackground.png) no-repeat;
+    width: 476px;
+    height: 262px;
+    padding-top: 25px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+#PasswordRecoveryContent p
+{
+    text-align: center;
+    color: #606060;
+    width: 450px;
+    padding-top: 60px;
+    margin: 0px auto;
+}
+
+#PasswordRecoveryContent .smallTitle
+{
+    background: url(Images/HorizontalLine.png) repeat-x;
+    display: block;
+    height: 34px;
+    position: relative;
+    width: 450px;
+}
+
+#PasswordRecoveryContent .smallTitle span
+{
+    background-color: #FFFFFF;
+    font-size: 14px;
+    float: left;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 20px 0 0 10px;
+    padding: 0px 10px;
+    color: #5C9FFF;
+}
+
+#PasswordRecoveryContent #Step1
+{
+    text-align: left;
+    padding-top: 40px;
+}
+
+#PasswordRecoveryContent #SuccessMessage
+{
+    position: relative;
+    margin: 80px auto 0px;
+}
+
+#SuccessMessage
+{
+    width: 100%;
+}
+
+#LoginWithSignUp
+{
+    display: inline-block;
+    width: 400px;
+    margin: 120px auto 70px auto;
+}
+
+#AdminLogin
+{
+    display: inline-block;
+    width: 400px;
+    margin: 70px auto;
+}
+
+#AdminLogin div, #LoginWithSignUp div
+{
+    margin: 10px auto;
+    display: inline-block;
+}
+
+.forgetPassword, .mandatory
+{
+    font-size: 12px;
+    color: #26577B;
+    text-align: right;
+    width: 180px;
+    padding-top: 15px;
+}
+
+.displayBlock
+{
+    display: inline-block;
+}
+
+.mandatoryText
+{
+    color: #666;
+}
+
+.joinNow
+{
+    float: right; /*margin: 35px 0px 0px 0px;*/
+    margin-top: -85px;
+    margin-right: -36px;
+    font-size: 14px; /*margin-bottom:150px;*/
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.joinNowColor, .forgetPassword
+{
+    color: #3297ee;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+/***** End of Admin Login *****************************************************************/
+
+/**** Admin Menu Tabs *********************************************************************/
+
+#TabbedMenu
+{
+    width: 100%;
+    padding: 0px;
+}
+
+#TopNavigationMenu .innerMenu .clientMenu #TabbedMenu #MenusOnly
+{
+    width: auto;
+    float: right;
+}
+
+.menuTab
+{
+    font-weight: bold;
+    padding: 0px;
+    font: normal small-caps bold 12px/14px Arial, Helvetica, sans-serif;
+    color: #5C9FFF;
+}
+
+#TabbedMenu li a.tab, #TabbedMenu li a:link, #TabbedMenu li a:visited
+{
+    padding-left: 12px;
+    height: 35px;
+    color: #5C9FFF;
+    background: url(Images/TabMenuLeft.png) no-repeat top left;
+    display: block;
+}
+
+#TabbedMenu li a.tab span, #TabbedMenu li a:link span, #TabbedMenu li a:visited span
+{
+    padding: 12px 10px;
+    background: url(Images/TabMenuMiddle.png) repeat-x top left;
+    height: 11px;
+    display: block;
+    float: left;
+}
+
+#TabbedMenu li a.tab div, #TabbedMenu li a:link div, #TabbedMenu li a:visited div
+{
+    background: url(Images/TabMenuRight.png) no-repeat top left;
+    display: inline;
+    height: 35px;
+    width: 15px;
+    display: block;
+    float: left;
+}
+
+#TabbedMenu li a.tab:hover
+{
+    background-position: left -35px;
+    color: #FFFFFF;
+}
+
+#TabbedMenu li a.tab:hover span
+{
+    background-position: left -35px;
+}
+
+#TabbedMenu li a.tab:hover div
+{
+    background-position: left -35px;
+}
+
+#TabbedMenu li a.selected, #menu li a.aspNetDisabled /* Builtin css class by .Net Engine*/
+{
+    background-position: left -70px;
+}
+
+#TabbedMenu li a.selected span
+{
+    background-position: left -70px;
+}
+
+#TabbedMenu li a.selected div
+{
+    background-position: left -70px;
+}
+
+.tabbedMenuBase
+{
+    clear: both;
+    background: #FFFFFF url(Images/ContentBackground.png) repeat-x top left;
+    height: 200px;
+}
+
+/**** AccountInfo & Hit Location Layouts ********************************************************************/
+
+#HitLocationWrapper, #ModalPopUpWrapper
+{
+    width: 600px;
+    margin: 20px auto;
+}
+
+#ModalPopUpWrapper
+{
+    color: #606060;
+}
+
+#HitLocation, #ModalPopUp
+{
+    width: 420px;
+    max-height: 260px;
+    overflow: auto;
+    margin: 20px auto;
+    border-bottom: 1px solid #95D9FE;
+}
+
+.locationDescription
+{
+    font: 18px Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#HitLocation > div, #ModalPopUp > div
+{
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+#HitLocation > div:first-child, #ModalPopUp > div:first-child
+{
+    border-top: 1px solid #95D9FE;
+    border-bottom: 1px solid #95D9FE;
+    color: #15ADFF;
+    font: bold small-caps 12px Verdana, Arial, Helvetica, sans-serif;
+    background: none;
+    cursor: default;
+}
+
+#HitLocation > div:first-child > span:first-child
+{
+    padding-left: 20px;
+}
+
+#HitLocation > div .locationsCity
+{
+    width: 340px;
+    position: relative;
+    left: 23px;
+    border-top: 1px solid #95D9FE;
+    border-bottom: 1px solid #95D9FE;
+    padding: 0px 10px;
+    margin: 10px 0px;
+    font-weight: normal;
+    display: none;
+}
+
+#HitLocation > div > .locationsCity > div > span:first-child
+{
+    width: 185px;
+    margin-right: 100px;
+    display: inline-block;
+}
+
+#HitLocation > div > .locationsCity > div
+{
+    margin: 5px 0px;
+}
+
+#HitLocation > div span.expandCollapse
+{
+    height: 14px;
+    width: 14px;
+    background: url(Images/ExpandCollapse.gif) no-repeat;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+
+#HitLocation > div span.expandCollapse.collapse
+{
+    background-position: -14px 0px;
+}
+
+#HitLocation > div span.expandCollapse.expand
+{
+    background-position: left top;
+}
+
+#HitLocation > div span.location, #ModalPopUp > div span.packageName
+{
+    width: 200px;
+    margin-right: 100px;
+    display: inline-block;
+}
+
+#ModalPopUp > div span.packageName
+{
+    width: 150px;
+    margin-right: 0px;
+}
+
+#HitLocation > div span.visit, #ModalPopUp > div span.expiryDate
+{
+    width: 50px;
+    display: inline-block;
+    text-align: right;
+}
+
+#ModalPopUp > div span.expiryDate
+{
+    width: 200px;
+    padding-left: 20px;
+}
+
+#HitLocation > div.alternateRow, #ModalPopUp > div.alternateRow
+{
+    background-color: #E6F4FC;
+}
+
+/**** End of Hit Location Layouts *************************************************************/
+
+/**** End of Menu Tabs ********************************************************************/
+
+/************************************* END OF GENERAL ***************************************/
+
+/****************************** SLEEKSURF MASTERPAGE SECTION ********************************/
+
+.wrapContent
+{
+    width: 1024px;
+    margin: 0px auto;
+    position: relative;
+    display: block;
+}
+
+#LoginBar
+{
+    background-color: #222222;
+    color: #FFFFFF;
+    height: 25px;
+    padding-top: 10px;
+}
+
+#BusinessSearchBarWithLogo
+{
+    background: url(Images/HeaderBackground.png) repeat-x bottom left;
+    height: 180px;
+}
+
+#LogoBar
+{
+    padding: 10px 0px;
+}
+
+#BusinessSearchBar
+{
+}
+
+#ContentWrapper, #AdvertisementWrapper
+{
+    clear: both;
+    background-color: #edefff;
+    min-height: 625px;
+    padding: 10px 0px;
+    text-align: justify;
+    font: 12px/18px Verdana, Arial, Helvetica, sans-serif;
+}
+
+#AdvertisementWrapper
+{
+    min-height: 120px;
+    max-height: 120px;
+    padding-bottom: 25px;
+}
+
+#TopContent
+{
+    background-color: #edefff;
+    font-family: "Century Gothic" , Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+}
+
+#TopContent .defineBusiness
+{
+    width: 420px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 40px;
+}
+
+#TopContent .defineBusiness > p:first-child
+{
+    padding: 0px;
+    margin: 0px;
+    font: normal 28px "Century Gothic" , Arial, Helvetica, sans-serif;
+}
+
+#TopContent .defineBusiness p
+{
+    font-size: small;
+}
+
+#TopContent .featureHighlight
+{
+    width: 500px;
+    display: inline-block;
+    float: right;
+}
+
+#TopContent .featureHighlight > div
+{
+    text-align: center;
+    width: 180px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#TopContent .featureHighlight > div p
+{
+    text-align: center;
+}
+
+#TopContent .featureHighlight img
+{
+    width: 80px;
+}
+
+#BottomContent
+{
+    background-color: #FFFFFF;
+}
+
+.sleekPackage
+{
+    padding: 0px;
+    display: block;
+    width: 848px;
+    display:inline-block;
+}
+
+.pageTitle > p:first-child
+{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+    font: normal 28px "Century Gothic" , Arial, Helvetica, sans-serif;
+}
+
+#ContactUsForm
+{
+    width: 790px;
+    margin-right: 10px;
+}
+
+.packageDetail
+{
+    border: 1px solid #EBEBEB;
+    padding: 0px;
+    display: inline-block;
+    width: 1024px;
+    margin-bottom: 20px;
+}
+
+#FooterWrapper
+{
+    background-color: #56b1f2;
+    height: 120px;
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    clear:both;
+}
+
+#FooterWrapper ul
+{
+    padding-top: 20px;
+}
+
+#FooterWrapper ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 0px;
+}
+
+#FooterWrapper ul li a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+#FooterWrapper ul li a:hover
+{
+    color: #606060;
+}
+
+#FooterWrapper span
+{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+/****************************** END OF SLEEKSURF MASTERPAGE *********************************/
+
+/************************* HEADERTOPMENU USERCONTROL SECTION **********************************/
+
+#userBarSection
+{
+    float: right;
+}
+
+#userBarSection ul
+{
+    margin: 4px 0 0 0;
+    overflow: hidden;
+}
+
+#userBarSection li
+{
+    border-left: 1px solid #484C65;
+    float: left;
+}
+
+#userBarSection li a
+{
+    color: #CCC;
+    display: block;
+    padding: 0 5px;
+}
+
+#userBarSection li a:hover
+{
+    color: #999;
+}
+
+/************************* END OF HEADERTOPMENU USERCONTROL ***********************************/
+
+/************************* HEADERTOPMENU USERCONTROL SECTION ***********************************/
+
+#BusinessSearch
+{
+    padding-top: 35px;
+    display: inline;
+}
+
+#BusinessSearch div
+{
+    margin: 0px 5px;
+    float: left; /* Remove this css if using old usercontrol and layout*/
+}
+
+#BusinessListings
+{
+    width: 790px;
+    margin-right: 10px;
+}
+
+#BusinessListings .business
+{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#BusinessListings .business .detailsOption
+{
+    width: 100%;
+    position:relative;
+    display: block;
+    text-align:right;
+    height: 18px;
+    margin-bottom: 10px;
+}
+
+#BusinessListings .business .detailsOption .messageStatus
+{
+    margin-top: 2px;
+    width: 770;
+    display: inline-block;
+    height: 30px;
+}
+
+#BusinessListings .business .detailsOption .icon, #BusinessListings .business .detailsOption .options
+{
+    display: none;
+}
+
+#BusinessListings .business .detailsOption .icon
+{
+    width: 20px;
+    float: right; 
+}
+
+#BusinessListings .business .detailsOption .options
+{
+    position:absolute;
+    top: 17px;
+    right: 0px;
+    width: 180px;
+    padding: 10px 0px;
+    border: 1px solid #748198;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+#BusinessListings .business .detailsOption .options ul li
+{
+    list-style: none;
+    cursor: pointer;
+    vertical-align: middle;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+#BusinessListings .business .detailsOption .options ul li > span
+{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#BusinessListings .business .detailsOption .options .option
+{
+    width: 120px;
+    padding: 5px;
+    font-family: Verdana, Arial, Sans-Serif;
+    border: 1px solid #CCCCCC;
+}
+
+#BusinessListings .business .detailsOption .options .waterMark
+{
+    color: #CCCCCC;
+    background-color: #EEEEEE;
+    width: 130px;
+    padding: 5px 0px;
+    font-family: Verdana, Arial, Sans-Serif;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+#BusinessListings .business .businessLogo
+{
+    width: 190px;
+    padding: 8px;
+    border: 1px solid #DDDDDD;
+    float: left;
+    display: block;
+    min-height: 85px;
+}
+
+#BusinessListings .business .businessDetails
+{
+    float: left;
+    width: 540px;
+    padding: 0px 20px;
+}
+
+#BusinessListings .business .businessDetails .businessName
+{
+    padding: 0px;
+    margin: 0px;
+    font: normal 18px "Century Gothic" , Arial, Helvetica, sans-serif;
+}
+
+#BusinessListings .business .businessDetails .businessLabel
+{
+    color: #999;
+    font: normal small "Century Gothic" , Arial, Helvetica, sans-serif;
+    line-height: 1em;
+    display: block;
+    padding-top: 8px;
+}
+
+#BusinessListings .business .businessDetails .businessLabel span
+{
+    display: inline-block;
+    width: 280px;
+}
+
+#BusinessListings .business .businessDetails .businessLabel span:first-child
+{
+    color: #5ac3f9;
+    width: 120px;
+    vertical-align: top;
+}
+
+#BusinessListings .business .businessDetails .viewProfile
+{
+    float: right;
+    margin-top: 25px;
+}
+
+/************************* END OF SEARCHBUSINESS USERCONTROL ***********************************/
+
+/************************* ADMIN MASTERPAGE LAYOUT *********************************************/
+
+#Wrapper
+{
+    clear: both;
+    width: 1024px;
+    margin: 0px auto;
+}
+
+#WrapperMasterPage
+{
+    width: 984px;
+    padding: 10px 20px;
+    position: relative;
+    display: inline-block;
+    top: -200px;
+}
+
+#BackendLogo
+{
+    background: transparent url(Images/LogoSleekSurf.png) no-repeat top left;
+    height: 100px;
+    width: 250px;
+    display: block;
+}
+
+#LeftContentMasterPage, #RightContentMasterPage
+{
+    float: left;
+}
+
+#LeftContentMasterPage
+{
+    width: 800px;
+}
+
+#RightContentMasterPage
+{
+    width: 164px;
+    margin-left: 10px;
+}
+
+.rightLinks
+{
+    margin-top: 60px;
+    padding-left: 10px;
+    background: url(Images/Line.png) no-repeat left top;
+    display: inline-block;
+    min-height: 480px;
+    width: 100%;
+}
+
+.hyperLink
+{
+    display: block;
+    color: #3d8bf4;
+    padding-left: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    vertical-align: middle;
+    padding-top: 3px;
+}
+
+.addHyperLink
+{
+    background: transparent url(Images/AddProduct.jpg) no-repeat top left;
+    height: 20px;
+}
+
+#TitleSearch, .titleSearch
+{
+    width: 100%;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#TitleSearch div
+{
+    float: left;
+}
+
+#ContentBody
+{
+    padding: 10px 0px;
+    background-color: #FFFFFF;
+    min-height: 400px;
+    position: relative;
+}
+
+#ContentFooter
+{
+    margin-top: -15px;
+    background-color: #FFFFFF;
+    text-align: center;
+    position: relative;
+}
+
+#ContentFooter ul
+{
+    border-top: 3px solid #CCCCCC;
+    margin: 0px 20px;
+    padding: 20px 0px;
+}
+
+#ContentFooter li
+{
+    list-style: none;
+    display: inline;
+    padding: 0px 8px;
+    border-left: 1px solid #CCCCCC;
+}
+
+#TopNavigationMenu
+{
+    margin-top: 15px;
+    clear: both;
+}
+
+#TopNavigationMenu .innerMenu
+{
+    position: relative;
+    top: -200px;
+    padding-top: 20px;
+}
+
+.title
+{
+    width: 40%;
+    color: #4594CB;
+    font: small-caps bold 20px Arial, Helvetica, sans-serif;
+}
+
+.clientNameTitle
+{
+    color: #4594CB;
+    font: small-caps 20px Arial, Helvetica, sans-serif;
+}
+
+.search
+{
+    width: 60%;
+    text-align: right;
+}
+
+.search #pnSearch
+{
+    float: right;
+}
+
+/*GridViewCSS Soft Grey Style*/
+.GridViewStyle
+{
+    font-family: Arial, Sans-Serif;
+    font-size: small;
+    table-layout: auto;
+    border-collapse: collapse;
+    width: 800px;
+}
+
+/*Header and Pager styles*/
+
+.HeaderStyle
+{
+    background: url(Images/AdminSubmenuBackground.png) repeat-x top left;
+    height: 37px;
+}
+
+.FooterStyle, .PagerStyle /*Common Styles*/
+{
+    /*background-image: url(Images/YahooSprite.gif);     background-position: top;     background-repeat:repeat;*/
+    background-color: #d1dbe0;
+    height: 40px;
+}
+
+.HeaderStyle th
+{
+    text-align: left;
+    padding: 5px 10px;
+    color: #16387c;
+}
+
+.HeaderStyle a
+{
+    text-decoration: none;
+    color: #16387c;
+    display: block;
+    text-align: left;
+    font-weight: normal;
+}
+
+.FooterStyle td
+{
+    padding: 5px 10px;
+}
+
+.PagerStyle table
+{
+    text-align: center;
+    margin: auto;
+}
+
+.PagerStyle table td
+{
+    border: 0px;
+    padding: 5px;
+}
+.PagerStyle td
+{
+    border-top: #91a7b4 1px solid;
+}
+.PagerStyle span
+{
+    color: #16387c;
+    text-decoration: none;
+    padding: 2px 10px 2px 10px;
+    border-top: solid 1px #fff;
+    border-right: solid 1px #91a7b4;
+    border-bottom: solid 1px #91a7b4;
+    border-left: solid 1px #fff;
+}
+.PagerStyle a
+{
+    font-weight: bold;
+    color: #16387c;
+    text-decoration: none;
+    padding: 2px 10px 2px 10px;
+}
+/*RowStyles*/
+
+.RowStyle td, .AltRowStyle td, .SelectedRowStyle td, .EditRowStyle td /*Common Styles*/
+{
+    background: #f1f5f6;
+    text-align: left;
+    padding: 5px 10px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.AltRowStyle td
+{
+    background-color: #FFFFFF; /*background-image: url(Images/YahooSprite.gif);     background-position:0 -80px;     background-repeat:repeat-x;*/
+}
+
+.SelectedRowStyle td
+{
+    background-color: #fcb814;
+    background-image: url(Images/YahooSprite.gif);
+    background-position: center;
+    background-repeat: repeat-x;
+}
+
+.GridViewStyle tr.RowStyle:Hover td, .GridViewStyle tr.AltRowStyle:Hover td
+{
+    background: #d2e7f0;
+}
+
+.paginationSummary
+{
+    margin: 10px 0px;
+}
+
+.paginationSummary div.summary
+{
+    display: inline-block;
+}
+
+.pagination
+{
+    clear: both;
+    margin: 10px auto;
+    text-align: center;
+    display: table;
+}
+
+.pagination div
+{
+    display: block;
+    float: left;
+}
+
+.paginationLinkButton
+{
+    padding: 2px 5px 2px 5px;
+    margin-right: 2px;
+    border: 1px solid #52bfea;
+    text-decoration: none;
+    color: #52bfea;
+}
+
+.pagination a:hover, .pagination a:active
+{
+    border: 1px solid #52bfea;
+    color: #fff;
+    background-color: #52bfea;
+}
+
+.pagination .aspNetDisabled
+{
+    padding: 2px 5px 2px 5px;
+    margin-right: 2px;
+    border: 1px solid #f3f3f3;
+    color: #ccc;
+}
+
+.pagination .currentPage
+{
+    padding: 2px 5px 2px 5px;
+    margin-right: 2px;
+    border: 1px solid #52bfea;
+    font-weight: bold;
+    background-color: #52bfea;
+    color: #FFF;
+}
+
+/************************* END OF ADMIN MASTERPAGE LAYOUT **************************************/
+
+/**************************** SEND EMAIL LAYOUT ************************************************/
+
+#SendEmailPanel
+{
+    width: 100%;
+}
+
+#SendEmailPanel > fieldset > div
+{
+    padding: 5px 0px 5px 10px;
+    clear: both;
+    display: block;
+}
+
+#SendEmailPanel label
+{
+    width: 80px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+#SendEmailPanel input[type=text]
+{
+    width: 850px;
+}
+
+.MultiFile-remove
+{
+    color: Red;
+}
+
+.MultiFile-remove:hover
+{
+    color: Red;
+    text-decoration: underline;
+}
+
+/**************************** END OF SEND EMAIL LAYOUT ******************************************/
+
+/**************************** USER CONTROLS LAYOUTS *********************************************/
+
+#Advertisement
+{
+    width: 720px;
+    margin: 0px auto;
+}
+
+.adImageRightBack
+{
+    position: absolute; 
+    left: 760px; 
+    top: 80px;
+    border: 1px solid #000000;
+}
+
+.adImageFooterBack
+{
+    display: inline-block;
+    border: 1px solid #000000;
+}
+
+#SignUpContent, #SignUpNavigation, #SignUpContentDetails, #InnerContent, #SignUpSummary, #PasswordRecovery, #ServiceDetails, #PromotionDetails, #CategoryDetails, #AccountDetails, #EventDetails, #PackageDetails, #PackageOptionDetails, #PackageOrderDetails, #MediaDetails, #ChangePassword, #panelAccountForSuperAdminView
+{
+    width: 720px;
+    margin: 0px auto;
+}
+
+#SignUpContent div
+{
+    padding: 5px 10px 5px 120px;
+}
+
+#SignUpContent div .adminOnly, #SignUpContentDetails div .adminOnly, #AccountDetails .adminOnly
+{
+    padding: 0px;
+}
+
+#SignUpContentDetails div, #AccountDetails div, #ContactUsForm div, #ChangePassword div, #panelAccountForSuperAdminView div
+{
+    padding: 5px 10px;
+    clear: both;
+    display: block;
+}
+
+#ServiceDetails
+{
+    display: inline-block;
+}
+
+#ServiceDetails .div
+{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    display: table;
+}
+
+#ServiceDetails .div .cell
+{
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 10px;
+}
+
+#PackageDetails input[type=text]
+{
+    width: 220px;
+}
+
+#PackageOptionDetails input[type=text]
+{
+    width: 220px;
+}
+
+#PromotionDetails, #CategoryDetails, #EventDetails, #PackageDetails, #PackageOptionDetails, #PackageOrderDetails, #MediaDetails
+{
+    position: relative;
+}
+
+#PromotionDetails .div, #CategoryDetails .div, #EventDetails .div, #PackageDetails .div, #PackageOptionDetails .div, #PackageOrderDetails .div, #MediaDetails .div, #Advertisement .div
+{
+    padding: 5px 10px;
+    clear: both;
+    display: block;
+}
+
+#PromotionDetails .div .cell, #EventDetails .div .cell, #PackageDetails .div .cell, #PackageOptionDetails .div .cell, #PackageOrderDetails .div .cell, #MediaDetails .div .cell
+{
+    display: table-cell;
+    vertical-align: top;
+}
+
+#PromotionDetails .div img, #EventDetails .div img, #Advertisement img, #PackageOptionDetails .div img
+{
+    float: right;
+}
+
+#PackageOrderDetails .div a
+{
+    color: #5C9FFF;
+}
+
+#PackageOrderDetails .div a:hover
+{
+    text-decoration: underline;
+}
+
+#ChangePassword label
+{
+    width: 200px;
+}
+
+.signUpSummaryDiv, .accountSummaryDiv
+{
+    padding: 5px 20px;
+    clear: both;
+    display: block;
+}
+
+#SignUpNavigation
+{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.loginTitle
+{
+    color: #3e4257;
+    padding: 15px 0px 20px 0px;
+    display: block;
+}
+
+.regoTypeRadioButton
+{
+    line-height: 30px;
+}
+
+.separator
+{
+    background: url(Images/Separator.jpg) repeat-x top left;
+    height: 14px;
+    margin: 15px 10px 0px;
+    padding: 0px;
+    display: inline-block;
+    width: inherit;
+}
+
+.sectionSummaryHeader
+{
+    margin: 0px;
+    margin-top: 15px;
+    padding: 5px 0px;
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.sectionSummary
+{
+    padding: 5px 20px;
+    display: block;
+}
+
+.topAlign
+{
+    vertical-align: top;
+}
+
+/**************************** END OF USER CONTROLS LAYOUTS ***************************************/
+
+/**************************** ACCOUNT MANAGEMENT LAYOUTS ***************************************/
+
+#panelAccountForClientView, #panelAccountForSuperAdminView, #panelTransactionReceipt
+{
+    clear: both;
+}
+
+.para
+{
+    padding: 40px 5px 0px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.accountRenew
+{
+    width: 228px;
+    height: 210px;
+    float: left;
+    background-image: url(Images/RenewAccount.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    border: 1px solid #5F8BF4;
+    margin: 10px;
+}
+
+.accountSMS
+{
+    width: 228px;
+    height: 210px;
+    float: left;
+    background-image: url(Images/BuySMSCredit.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    border: 1px solid #9DCA03;
+    margin: 10px;
+}
+
+.accountTransaction
+{
+    width: 228px;
+    height: 210px;
+    float: left;
+    background-image: url(Images/Transaction.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    border: 1px solid #FEA416;
+    margin: 10px;
+}
+
+/**************************** END OF ACCOUNT MANAGEMENT LAYOUTS ***************************************/
+
+/******************************************************* FAQs ****************************************************/
+
+#FAQPanel
+{
+    width: 790px;
+    margin-right: 10px;
+    display:inline-block;
+}
+
+#FAQPanel ul li
+{
+    list-style-type: none;
+}
+
+.faqGroup
+{
+    padding-top: 5px;
+}
+
+.sectionHeader
+{
+    background: url(Images/CollapseTriangle.png) no-repeat;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font: 16px/18px "Century Gothic" , Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    display: block;
+    width: auto;
+}
+
+.collapsed
+{
+    background-position: 2px -84px;
+}
+
+.expanded
+{
+    background-position: 2px 6px;
+}
+
+.question
+{
+    cursor: pointer;
+    font: bold 12px/18px Verdana, Arial, Helvetica, sans-serif;
+    color: #606060;
+    width: auto;
+}
+
+.content, .answer
+{
+    display: none;
+}
+
+.content
+{
+    padding: 15px 25px;
+}
+
+.answer
+{
+    font: 12px/18px Verdana, Arial, Helvetica, sans-serif;
+    color: #606060;
+    padding-bottom: 10px;
+}
+
+/******************************************************** END OF FAQs ******************************************/
+
+/*************************************** ACCESS SUSPENDED PAGE ******************************************/
+
+#Layout
+{
+    width: 665px;
+    margin: 30px auto;
+    background-color: #ffffff;
+}
+
+#MessageBox
+{
+    border: 1px solid #83c5fc;
+    background: url(Images/MessageBoxTopBackground.png) repeat-x top;
+    padding: 10px 20px;
+}
+
+.messageTitle
+{
+    color: #FFF;
+    font-size: 18px;
+    margin: 6px 0px 30px 0px;
+    display: block;
+}
+
+#MessageBox p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+.suspendedButton
+{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background: url(Images/MessageButton.png) no-repeat;
+    height: 29px;
+    width: 123px;
+    padding: 5px 0 5px 0;
+    color: #FFFFFF;
+    border: none;
+}
+
+.suspendedButton:hover
+{
+    color: #115288;
+}
+
+/*********************************** END OF ACCESS SUSPENDED PAGE ****************************************/
+
+/***************************** TERMS & CONDITIONS AND PRIVACY POLICY PAGE ********************************/
+
+#TermsAndConditions, #PrivacyPolicy
+{
+    width: 790px;
+    margin-right: 10px;
+    display:inline-block;
+}
+
+#TermsAndConditions ul li, #PrivacyPolicy ul li
+{
+    list-style-image: url(Images/Square.png);
+    text-align: justify;
+    margin: 10px 15px;
+}
+
+#TermsAndConditions li li, #PrivacyPolicy li li
+{
+    list-style-image: url(Images/SquareSmall.png);
+    margin: 10px;
+}
+
+/************************** END OF TERMS & CONDITIONS AND PRIVACY POLICY PAGE **************************/
+
+/***************************************** SLIDING PANEL **********************************************/
+
+#accountDetailsBase
+{
+    background: url(Images/SlidingTab.png) repeat-x 0px 0px;
+    height: 42px;
+    position: relative;
+    top: 0px;
+}
+
+#accountDetailsBaseTab
+{
+    width: 1024px;
+    margin: 0px auto;
+}
+
+#accountDetailsBaseTab ul.tab
+{
+    display: block;
+    position: relative;
+    float: right;
+    clear: right;
+    height: 42px;
+    width: auto;
+    font-weight: bold;
+    line-height: 42px;
+    margin: 0px;
+    right: 0px;
+    color: white;
+    font-size: 80%;
+    text-align: center;
+}
+
+#accountDetailsBaseTab ul.tab li.left
+{
+    background: url(Images/TabLeft.png) no-repeat left 0px;
+    height: 42px;
+    width: 30px;
+    display: block;
+    padding: 0px;
+    float: left;
+}
+
+#accountDetailsBaseTab ul.tab li.right
+{
+    background: url(Images/TabRight.png) no-repeat left 0px;
+    height: 42px;
+    width: 30px;
+    display: block;
+    padding: 0px;
+    float: left;
+}
+
+#accountDetailsBaseTab ul.tab li
+{
+    background: url(Images/TabMiddle.png) repeat-x 0px 0px;
+    text-align: left;
+    padding: 0px 6px;
+    display: block;
+    float: left;
+    height: 42px;
+}
+
+#accountDetailsBaseTab ul.tab a
+{
+    color: #15ADFF;
+}
+
+#accountDetailsBaseTab ul.tab li a:hover
+{
+    color: white;
+}
+
+#accountDetailsBaseTab a.open, #accountDetailsBaseTab a.close
+{
+    height: 20px;
+    line-height: 20px !important;
+    padding-left: 30px !important;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    top: 11px;
+    width: 80px;
+}
+
+#accountDetailsBaseTab a.open
+{
+    background: url(Images/ButtonOpen.png) no-repeat left 0px;
+}
+
+#accountDetailsBaseTab a.close
+{
+    background: url(Images/ButtonClose.png) no-repeat left 0;
+}
+
+#accountDetailsBaseTab a:hover.open
+{
+    background: url(Images/ButtonOpen.png) no-repeat left -19px;
+}
+
+#accountDetailsBaseTab a:hover.close
+{
+    background: url(Images/ButtonClose.png) no-repeat left -19px;
+}
+
+#accountSummaryPanelForClient
+{
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+
+#wrapperPanel
+{
+    background-color: #272727;
+}
+
+#accountSummaryPanel
+{
+    width: 1024px;
+    margin: 0px auto;
+    height: 20px;
+    padding: 8px 0px; /*color: #999999;*/
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+
+#accountSummaryPanel ul, #accountSummaryPanel #upHitType
+{
+    display: inline-block;
+}
+
+#accountSummaryPanel .accountDetails li
+{
+    list-style: none;
+    float: left;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-right: 2px solid #15ADFF;
+    padding: 0px 8px;
+}
+
+#accountSummaryPanel .accountDetails li a
+{
+    color: #FFFFFF;
+}
+
+#accountSummaryPanel .accountDetails li a:hover
+{
+    text-decoration: underline;
+}
+
+#accountSummaryPanel #rblHitType li
+{
+    list-style: none;
+    display: inline;
+    width: 80px;
+}
+
+#accountSummaryPanel #upHitType
+{
+    margin-left: 150px;
+}
+
+#accountSummaryPanel #upHitType > span
+{
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+#accountSummaryPanel #upHitType span.hitType > span
+{
+    width: 80px;
+    height: 26px;
+    float: left;
+    display: inline-block;
+}
+
+#accountSummaryPanel #upHitType span.searchDuration > span
+{
+    width: 40px;
+    height: 26px;
+    float: left;
+}
+
+/*************************************** END OF SLIDING PANEL *****************************************/
+
+
+/*************************************** DROPDOWN SIMULATION BLOCK *****************************************/
+
+
+/******** CustomerManagement Page ********/
+
+#MoveAndGroup
+{
+    position: relative;
+    padding-top: 5px;
+}
+
+#MoveToGroup
+{
+    height: 18px;
+    padding-right: 10px;
+    border-right: 1px solid #606060;
+}
+
+#Group
+{
+    position: absolute;
+    top: 23px;
+    border: 1px solid #777777;
+    background-color: #FFFFFF;
+    width: 205px;
+    display: none;
+}
+
+#ExistingGroup
+{
+    margin: 5px 0px;
+    max-height: 210px;
+    overflow: auto;
+    width: 100%;
+}
+
+#ExistingGroup ul
+{
+    list-style: none;
+}
+
+#ExistingGroup ul li
+{
+    padding: 3px 15px;
+    cursor: pointer;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+#ExistingGroup ul li:hover
+{
+    background-color: #F0F0F0;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#AddNewGroup
+{
+    width: 100%;
+    padding: 10px 0px;
+    border-top: 1px solid #CCCCCC;
+}
+
+#AddNewGroup ul li
+{
+    list-style: none;
+    padding: 0px 15px;
+    cursor: pointer;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    vertical-align: middle;
+}
+
+#AddNewGroup ul li > span
+{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#AddNewGroup .newGroup
+{
+    width: 120px;
+    padding: 5px;
+    font-family: Verdana, Arial, Sans-Serif;
+    border: 1px solid #CCCCCC;
+}
+
+#AddNewGroup .waterMark
+{
+    color: #CCCCCC;
+    background-color: #FFFFFF;
+    width: 130px;
+    padding: 5px 0px;
+    font-family: Verdana, Arial, Sans-Serif;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+#CustomerGroups
+{
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #CCCCCC;
+    max-height: 365px;
+    overflow: auto;
+    height: 365px;
+}
+
+#CustomerGroups ul
+{
+    list-style: none;
+    width: 100%;
+}
+
+#CustomerGroups li
+{
+    width: 125px;
+    padding: 8px 0px 5px 30px;
+    cursor: pointer;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    background: url(Images/FolderSmall.png) no-repeat center left;
+}
+
+#CustomerGroups li:hover
+{
+    background-color: #F0F0F0;
+}
+
+#CustomerGroups li.selected
+{
+    background-color: #F0F0F0;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+
+/******** New Edit Promotion Page ********/
+
+.panelDropDown
+{
+    position: relative;
+}
+
+.panelDropDown .ddlPanel
+{
+    width: 190px;
+    padding: 10px 0px 0px;
+    position: absolute;
+    top: 26px;
+    left: 40px;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    display: none;
+    z-index: 1000;
+}
+
+.panelDropDown .ddlPanel div
+{
+    margin-top: 10px;
+    padding: 10px 0px;
+    border-top: 1px solid #CCCCCC;
+}
+
+.panelDropDown .ddlPanel div
+{
+    margin-top: 10px;
+}
+
+.panelDropDown .ddlPanel ul
+{
+    list-style: none;
+}
+
+.panelDropDown .ddlPanel ul li, .panelDropDown .ddlPanel div label
+{
+    padding: 5px 10px;
+    cursor: pointer;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.panelDropDown .ddlPanel div label
+{
+    width: 160px;
+    padding: 5px 0px 5px 30px;
+}
+
+.panelDropDown .ddlPanel ul li:hover, .panelDropDown .ddlPanel div label:hover
+{
+    background-color: #F0F0F0;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.panelDropDown .ddlPanel ul li label
+{
+    margin-left: 10px;
+}
+
+.panelDropDown .selectedCustomerLabel
+{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.noCss
+{
+    padding: 0px;
+    border-bottom: 1px solid #CCCCCC;
+    margin: 10px 0px;
+}
+
+.absolutePosition
+{
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+
+/************************************ END OF DROPDOWN SIMULATION BLOCK **************************************/
+
+/************************************ CUSTOM CUSTOMER SELECTION LAYOUT **************************************/
+
+#Container
+{
+    width: 700px;
+    margin: 0px auto;
+}
+
+#CustomerList
+{
+    width: 700px;
+    max-height: 350px;
+    overflow: auto;
+}
+
+.countDescription
+{
+    font: 18px Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    height: 20px;
+    display: block;
+}
+
+/************************************ END OF CUSTOM CUSTOMER SELECTION **************************************/
+
+/********************************************* PACKAGE LAYOUT ************************************************/
+
+.package
+{
+    display: table;
+    background-color: #EDEFFF;
+    position: relative;
+    display:block;
+}
+
+.packageHeaderLeft, .packageHeaderMiddle, .packageHeaderRight, .packageContentLeft, .packageContentMiddle, .packageContentRight, .packageFooterLeft, .packageFooterMiddle, .packageFooterRight
+{
+    display: table-cell;
+}
+
+.packageHeaderLeft
+{
+    background: url(Images/PackageTopLeft.png) no-repeat top left;
+    height: 51px;
+    width: 50px;
+}
+
+.packageHeaderMiddle
+{
+    background: url(Images/PackageTopMiddle.png) repeat-x top left;
+    height: 51px;
+    width: 700px;
+}
+
+.packageHeaderRight
+{
+    background: url(Images/PackageTopRight.png) no-repeat top left;
+    height: 51px;
+    width: 58px;
+}
+
+.packageContentLeft
+{
+    background: url(Images/PackageContentLeft.png) repeat-y top left;
+    width: 50px;
+}
+
+.packageContentMiddle
+{
+    background: #FFFFFF;
+    width: 700px;
+    font-family: "Century Gothic" , Arial, Helvetica, sans-serif;
+}
+
+.packageContentMiddle h3
+{
+    font: normal 18px 'Century Gothic' , Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.packageContentMiddle .packageIcons img
+{
+    display: inline;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.packageContentMiddle .packageTitle
+{
+    margin: 10px 0px;
+    position: absolute;
+    left: 0px;
+    height: 55px;
+    display: block;
+    padding: 5px 50px 0px;
+    background: transparent url(Images/PackageNameBG.png) repeat-x top left;
+    color: #FFFFFF;
+    font: small-caps normal 38px "Century Gothic" , Arial, Helvetica, sans-serif;
+}
+
+.packageContentMiddle .packageTitleMirror
+{
+    margin: 10px 0px;
+    height: 60px;
+    display: block;
+}
+
+.packageContentMiddle .packageOptions
+{
+    margin-top: 20px;
+}
+
+.packageContentMiddle .packageOptions table
+{
+    width: 100%;
+}
+
+.packageContentMiddle .packageOptions table label
+{
+    display: inline;
+}
+
+.packageContentMiddle .packageFeatures ul li
+{
+    list-style: none;
+    background: url(Images/Tick.png) no-repeat top left;
+    padding-left: 30px;
+    min-height: 25px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: small;
+}
+
+.packageContentMiddle .promoCode
+{
+    width: 150px;
+    padding: 5px;
+    font-family: Verdana, Arial, Sans-Serif;
+    border: 1px solid #CCCCCC;
+}
+
+.packageContentMiddle .waterMark
+{
+    color: #A5A5A5;
+    background-color: #FFFFFF;
+    width: 160px;
+    padding: 5px 0px;
+    font-family: Verdana, Arial, Sans-Serif;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.packageContentMiddle .packageConfirmation
+{
+    padding-left: 28px;
+    font-size: small;
+}
+
+.packageContentMiddle .packageConfirmation .textSummary
+{
+    margin-top: 10px;
+    color: #3E9CDD;
+}
+
+.packageContentMiddle .packageConfirmation .textSummary > span:first-child
+{
+    color: #666666;
+    width: 150px;
+    display: inline-block;
+}
+
+.packageContentRight
+{
+    background: url(Images/PackageContentRight.png) repeat-y top left;
+    width: 58px;
+}
+
+.packageFooterLeft
+{
+    background: url(Images/PackageBottomLeft.png) no-repeat top left;
+    height: 59px;
+    width: 50px;
+}
+
+.packageFooterMiddle
+{
+    background: url(Images/PackageBottomMiddle.png) repeat-x top left;
+    height: 59px;
+    width: 700px;
+}
+
+.packageFooterRight
+{
+    background: url(Images/PackageBottomRight.png) no-repeat top left;
+    height: 59px;
+    width: 58px;
+}
+
+/******** Custom Form Elements ************/
+
+.checkbox, .radio
+{
+    width: 19px;
+    height: 25px;
+    padding: 0 5px 0 0;
+    background: url(Images/Checkbox.png) no-repeat;
+    display: block;
+    clear: left;
+    float: left;
+}
+
+.radio
+{
+    background: url(Images/Radio.png) no-repeat;
+}
+
+.select
+{
+    position: absolute;
+    width: 158px; /* With the padding included, the width is 190 pixels: the actual width of the image. */
+    height: 21px;
+    padding: 0 24px 0 8px;
+    color: #fff;
+    font: 12px/21px arial,sans-serif;
+    background: url(Images/Select.gif) no-repeat;
+    overflow: hidden;
+}
+
+/****************************************** END OF PACKAGE LAYOUT ********************************************/
+
+/****************************************** CIRCULAR MENU LAYOUT ********************************************/
+
+.businessCyclePackage
+{
+    padding-top: 20px;
+}
+
+.businessCyclePackage > div
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 500px;
+}
+
+.businessCyclePackage > div > p:first-child
+{
+    padding: 0px;
+    margin: 0px;
+    font: normal 28px "Century Gothic" , Arial, Helvetica, sans-serif;
+}
+
+#CircularFlow
+{
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #fff url(Images/Background.gif) no-repeat;
+}
+
+#CircularFlow li
+{
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+
+#CircularFlow li.business
+{
+    left: 120px;
+    top: 4px;
+    background: url(Images/Business.gif) no-repeat center center;
+}
+
+#CircularFlow li.sleekSurfEngine
+{
+    left: 230px;
+    top: 115px;
+    background: url(Images/Search.gif) no-repeat center center;
+}
+
+#CircularFlow li.uniqueProfile
+{
+    left: 120px;
+    top: 225px;
+    background: url(Images/Profile.gif) no-repeat center center;
+}
+
+#CircularFlow li.connectingPeople
+{
+    left: 5px;
+    top: 115px;
+    background: url(Images/Customers.gif) no-repeat center center;
+}
+
+#CircularFlow li a p
+{
+    display: none;
+}
+
+#CircularFlow li a
+{
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#CircularFlow li a:hover
+{
+    background: url(Images/Circle.gif);
+    text-decoration: none;
+    font-family: "Century Gothic" , Arial, Helvetica, sans-serif;
+}
+
+#CircularFlow li a:hover p
+{
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+    color: #63352c;
+    text-align: center;
+    background: #fff;
+}
+#CircularFlow li a:hover p span
+{
+    display: block;
+    font-size: 12px;
+    color: #888;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+#CircularFlow li.business a:hover p
+{
+    left: -22px;
+    top: 85px;
+}
+
+#CircularFlow li.sleekSurfEngine a:hover p
+{
+    left: -132px;
+    top: -26px;
+}
+#CircularFlow li.connectingPeople a:hover p
+{
+    left: 93px;
+    top: -26px;
+}
+
+#CircularFlow li.uniqueProfile a:hover p
+{
+    left: -22px;
+    top: -136px;
+}
+
+/*************************************** END OF CIRCULAR MENU LAYOUT *****************************************/
+
+/*********************************************** PAGER LAYOUT ************************************************/
+
+#TopNavigation
+{
+    margin-top: 20px;
+    padding: 6px 0px;
+    border-top: 2px solid #CCCCCC;
+    border-bottom: 2px solid #CCCCCC;
+}
+
+#Pager > span span
+{
+    font-weight: bold;
+}
+
+#TopNavigation #Pager .left
+{
+    width: 100px;
+    text-align: left;
+    display: inline-block;
+}
+
+#TopNavigation #Pager .middle
+{
+    width: 540px;
+    text-align: center;
+    display: inline-block;
+}
+
+#TopNavigation #Pager .right
+{
+    width: 150px;
+    text-align: right;
+    display: inline-block;
+}
+
+#BottomNavigation
+{
+    margin-bottom: 20px;
+    padding: 5px 0px;
+    border-top: 2px solid #CCCCCC;
+    text-align: center;
+}
+
+/**************************************** END OF PAGER LAYOUT ******************************************/
+
+/*************************************** ADVERTISEMENT LAYOUT ******************************************/
+
+.advertisementMain
+{
+    background: transparent url(Images/TopAdTab.png) no-repeat top right;
+    padding-top: 23px;
+    max-width: 202px;
+    float: right;
+}
+
+.advertisementBottomMain
+{
+    background: transparent url(Images/BottomAdTab.png) no-repeat bottom right;
+    padding-bottom: 23px;
+    display:block;
+}
+
+#GoogleAdMain, #RightAdvertisementsMain
+{
+    max-width: 202px;
+    float: right;
+    padding: 5px;
+    border: 1px solid #14AED0;
+}
+
+.rightSideAdMain
+{
+    max-width: 202px;
+    display: block;
+    overflow: hidden;
+}
+
+.rightSideAdMain img, .footerAdMain img
+{
+    border: 1px solid #000000;
+}
+
+#FooterAdsSectionMain
+{
+    width: 790px;
+    margin-right: 10px;
+}
+
+#FooterAdsMain
+{
+    max-height: 120px;
+    padding: 10px 0px;
+    border-top: 2px solid #14AED0;
+    border-bottom: 2px solid #14AED0;
+    display: inline-block;
+    width: 100%;
+}
+
+.footerAdMain
+{
+    max-height: 120px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/************************************** END OF ADVERTISEMENT LAYOUT ****************************************/
+
+.modalBackground
+{
+    background-color: Gray;
+    filter:alpha(opacity=40);
+    opacity:0.7;
+}
+
+.modalPopUp
+{
+    width: 600px; 
+    padding: 0px 10px 10px;
+    border: solid 2px #808080;
+    background-color: White;
+}

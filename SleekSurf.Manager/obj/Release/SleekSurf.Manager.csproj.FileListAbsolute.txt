@@ -1,0 +1,11 @@
+F:\SleekSurf\SleekSurf.Manager\bin\Release\SleekSurf.Manager.dll
+F:\SleekSurf\SleekSurf.Manager\bin\Release\SleekSurf.Manager.pdb
+F:\SleekSurf\SleekSurf.Manager\bin\Release\SleekSurf.DataAccess.dll
+F:\SleekSurf\SleekSurf.Manager\bin\Release\SleekSurf.Entity.dll
+F:\SleekSurf\SleekSurf.Manager\bin\Release\SleekSurf.FrameWork.dll
+F:\SleekSurf\SleekSurf.Manager\bin\Release\SleekSurf.DataAccess.pdb
+F:\SleekSurf\SleekSurf.Manager\bin\Release\SleekSurf.Entity.pdb
+F:\SleekSurf\SleekSurf.Manager\bin\Release\SleekSurf.FrameWork.pdb
+F:\SleekSurf\SleekSurf.Manager\obj\Release\SleekSurf.Manager.csprojResolveAssemblyReference.cache
+F:\SleekSurf\SleekSurf.Manager\obj\Release\SleekSurf.Manager.dll
+F:\SleekSurf\SleekSurf.Manager\obj\Release\SleekSurf.Manager.pdb

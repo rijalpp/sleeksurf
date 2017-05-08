@@ -1,0 +1,237 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminSite.master.cs"
+    Inherits="SleekSurf.Web.Admin.AdminSite" %>
+
+<%@ Register Src="~/Admin/UserControls/SANavigationMenu.ascx" TagPrefix="uc" TagName="SANavMenu" %>
+<%@ Register Src="~/Admin/UserControls/CANavigationMenu.ascx" TagPrefix="uc" TagName="CANavMenu" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Scripts/AutoComplete/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../Scripts/Fancybox/fancybox.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="changeBodyBackGround">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="adminSM" runat="server">
+        <Scripts>
+            <asp:ScriptReference Path="~/Scripts/AutoComplete/jquery-1.4.2.min.js" />
+            <asp:ScriptReference Path="~/Scripts/AutoComplete/jquery-ui-1.8.custom.min.js" />
+            <asp:ScriptReference Path="~/Scripts/AutoComplete/AutoComplete.js" />
+            <asp:ScriptReference Path="~/Scripts/Clock/clockp.js" />
+            <asp:ScriptReference Path="~/Scripts/Clock/clockh.js" />
+            <asp:ScriptReference Path="~/Scripts/Uploadify-v2.1.4/jquery.uploadify.v2.1.4.js" />
+            <asp:ScriptReference Path="~/Scripts/Uploadify-v2.1.4/swfobject.js" />
+            <asp:ScriptReference Path="~/Scripts/FyneWorks/jquery.MultiFile.js" />
+            <asp:ScriptReference Path="~/Scripts/Fancybox/Fancybox-1.3.3.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#open").click(function () {
+                $("#accountSummaryPanel").slideDown("slow");
+
+            });
+            $("#close").click(function () {
+                $("#accountSummaryPanel").slideUp("slow");
+            });
+            $("#toggle a").click(function () {
+                $("#toggle a").toggle();
+            });
+        });
+    </script>
+    <!-- Panel -->
+    <div id="accountSummaryPanelForClient" runat="server" visible="false">
+        <div id="wrapperPanel">
+            <div id="accountSummaryPanel">
+                <ul class="accountDetails">
+                    <li>
+                        <asp:LinkButton ID="lbAccountValidity" Text="Show Account Validity" runat="server" />
+                        <asp:Panel ID="pnAccountValidity" runat="server" CssClass="modalPopUp">
+                            <div id="ModalPopUpWrapper">
+                                <p class="locationDescription">
+                                    Currently this Business/Organisation is registered with <span style='font: 100px Arial, Verdana, Helvetica, sans-serif;
+                                        color: #15ADFF; text-align: center; display: block;'>
+                                        <asp:Literal ID="ltrPackageCount" runat="server" /></span> package(s), which
+                                    is valid until following specified date.</p>
+                                <div id="ModalPopUp">
+                                    <asp:Repeater ID="rptrPackages" runat="server" OnItemDataBound="rptrPackages_ItemDataBound">
+                                        <HeaderTemplate>
+                                            <div>
+                                                <span class="packageName">Package</span> <span class="expiryDate">Expiry Date</span>
+                                            </div>
+                                        </HeaderTemplate>
+                                        <ItemTemplate>
+                                            <div class="alternateRow">
+                                                <span class="packageName">
+                                                    <asp:Literal ID="ltrPackageName" Text='<%# Eval("PackageName")%>' runat="server" />
+                                                </span><span class="expiryDate">
+                                                    <%# DataBinder.Eval(Container.DataItem, "ExpiryDate", "{0:dd/MM/yyyy}")%></span>
+                                            </div>
+                                        </ItemTemplate>
+                                        <AlternatingItemTemplate>
+                                            <div>
+                                                <span class="packageName">
+                                                    <asp:Literal ID="ltrPackageName" Text='<%# Eval("PackageName")%>' runat="server" /></span>
+                                                <span class="expiryDate">
+                                                    <%# DataBinder.Eval(Container.DataItem, "ExpiryDate", "{0:dd/MM/yyyy}")%></span>
+                                            </div>
+                                        </AlternatingItemTemplate>
+                                    </asp:Repeater>
+                                </div>
+                                <div style="text-align: right; padding-right: 90px;">
+                                    <asp:Button ID="btnOK" Text="OK" runat="server" SkinID="SearchButtonSmall" />
+                                </div>
+                            </div>
+                        </asp:Panel>
+                        <asp:ModalPopupExtender ID="mpeAccountValidity" runat="server" TargetControlID="lbAccountValidity"
+                            PopupControlID="pnAccountValidity" BackgroundCssClass="modalBackground" OkControlID="btnOK">
+                        </asp:ModalPopupExtender>
+                    </li>
+                    <li style="border: none;">SMS Credit:
+                        <asp:Literal ID="ltrSMSCredit" runat="server"></asp:Literal>&nbsp; remaining</li>
+                </ul>
+                <asp:UpdatePanel ID="upHitType" runat="server">
+                    <ContentTemplate>
+                        <span class="hitType"><span>
+                            <asp:RadioButton runat="server" ID="rbtnPageHit" GroupName="HitType" AutoPostBack="true"
+                                Checked="true" OnCheckedChanged="rbtnPageHit_CheckedChanged" />
+                            <asp:ToggleButtonExtender ID="tbePageHit" runat="server" CheckedImageAlternateText="Check"
+                                CheckedImageUrl="~/App_Themes/SleekTheme/Images/PageHitToggle.png" ImageHeight="26"
+                                ImageWidth="80" TargetControlID="rbtnPageHit" UncheckedImageAlternateText="UnCheck"
+                                UncheckedImageUrl="~/App_Themes/SleekTheme/Images/PageHit.png">
+                            </asp:ToggleButtonExtender>
+                        </span><span>
+                            <asp:RadioButton runat="server" ID="rbtnSearchHit" GroupName="HitType" AutoPostBack="true"
+                                OnCheckedChanged="rbtnSearchHit_CheckedChanged" />
+                            <asp:ToggleButtonExtender ID="tbeSearchHit" runat="server" CheckedImageAlternateText="Check"
+                                CheckedImageUrl="~/App_Themes/SleekTheme/Images/SearchHitToggle.png" ImageHeight="26"
+                                ImageWidth="80" TargetControlID="rbtnSearchHit" UncheckedImageAlternateText="UnCheck"
+                                UncheckedImageUrl="~/App_Themes/SleekTheme/Images/SearchHit.png">
+                            </asp:ToggleButtonExtender>
+                        </span></span><span class="searchDuration"><span>
+                            <asp:RadioButton runat="server" ID="rbtnAll" GroupName="searchDuration" AutoPostBack="true"
+                                OnCheckedChanged="rbtnAll_CheckedChanged" />
+                            <asp:ToggleButtonExtender ID="tbeAll" runat="server" CheckedImageAlternateText="Check"
+                                CheckedImageUrl="~/App_Themes/SleekTheme/Images/AllToggle.png" ImageHeight="26"
+                                ImageWidth="40" TargetControlID="rbtnAll" UncheckedImageAlternateText="UnCheck"
+                                UncheckedImageUrl="~/App_Themes/SleekTheme/Images/All.png">
+                            </asp:ToggleButtonExtender>
+                        </span><span>
+                            <asp:RadioButton runat="server" ID="rbtnDay" GroupName="searchDuration" AutoPostBack="true"
+                                OnCheckedChanged="rbtnDay_CheckedChanged" />
+                            <asp:ToggleButtonExtender ID="tbeDay" runat="server" CheckedImageAlternateText="Check"
+                                CheckedImageUrl="~/App_Themes/SleekTheme/Images/DayToggle.png" ImageHeight="26"
+                                ImageWidth="40" TargetControlID="rbtnDay" UncheckedImageAlternateText="UnCheck"
+                                UncheckedImageUrl="~/App_Themes/SleekTheme/Images/Day.png">
+                            </asp:ToggleButtonExtender>
+                        </span><span>
+                            <asp:RadioButton runat="server" ID="rbtnWeek" GroupName="searchDuration" AutoPostBack="true"
+                                OnCheckedChanged="rbtnWeek_CheckedChanged" />
+                            <asp:ToggleButtonExtender ID="tbeWeek" runat="server" CheckedImageAlternateText="Check"
+                                CheckedImageUrl="~/App_Themes/SleekTheme/Images/WeekToggle.png" ImageHeight="26"
+                                ImageWidth="40" TargetControlID="rbtnWeek" UncheckedImageAlternateText="UnCheck"
+                                UncheckedImageUrl="~/App_Themes/SleekTheme/Images/Week.png">
+                            </asp:ToggleButtonExtender>
+                        </span><span style="width: 50px">
+                            <asp:RadioButton runat="server" ID="rbtnMonth" GroupName="searchDuration" AutoPostBack="true"
+                                OnCheckedChanged="rbtnMonth_CheckedChanged" />
+                            <asp:ToggleButtonExtender ID="tbeMonth" runat="server" CheckedImageAlternateText="Check"
+                                CheckedImageUrl="~/App_Themes/SleekTheme/Images/MonthToggle.png" ImageHeight="26"
+                                ImageWidth="50" TargetControlID="rbtnMonth" UncheckedImageAlternateText="UnCheck"
+                                UncheckedImageUrl="~/App_Themes/SleekTheme/Images/Month.png">
+                            </asp:ToggleButtonExtender>
+                        </span><span>
+                            <asp:RadioButton runat="server" ID="rbtnYear" GroupName="searchDuration" AutoPostBack="true"
+                                OnCheckedChanged="rbtnYear_CheckedChanged" />
+                            <asp:ToggleButtonExtender ID="tbeYear" runat="server" CheckedImageAlternateText="Check"
+                                CheckedImageUrl="~/App_Themes/SleekTheme/Images/YearToggle.png" ImageHeight="26"
+                                ImageWidth="40" TargetControlID="rbtnYear" UncheckedImageAlternateText="UnCheck"
+                                UncheckedImageUrl="~/App_Themes/SleekTheme/Images/Year.png">
+                            </asp:ToggleButtonExtender>
+                        </span></span>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
+        <div id="accountDetailsBase">
+            <!-- /login -->
+            <!-- The tab on top -->
+            <div id="accountDetailsBaseTab">
+                <ul class="tab">
+                    <li class="left">&nbsp;</li>
+                    <li id="toggle"><a id="open" class="open" href="#">Account Details</a> <a id="close"
+                        style="display: none;" class="close" href="#">Close Panel</a> </li>
+                    <li class="right">&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--panel -->
+    <div id="Wrapper">
+        <div id="ClockPlaceHolder">
+        </div>
+        <div class="statusPanel">
+            <div id="BackendLogo">
+            </div>
+            <div style="float: right;">
+                <asp:LoginView ID="lvBackEndMasterPage" runat="server">
+                    <LoggedInTemplate>
+                        <asp:LoginName ID="LoginName1" runat="server" Font-Bold="true" FormatString="Welcome  {0} " />
+                        <span>
+                            <asp:HyperLink ID="hlEditProfile" Font-Bold="true" runat="server" Text="Edit Profile"
+                                NavigateUrl="~/Admin/AdminEditProfile.aspx"></asp:HyperLink>
+                        </span><span>
+                            <asp:HyperLink ID="hlChangePassword" Font-Bold="true" runat="server" Text="Change Password"
+                                NavigateUrl="~/Admin/ChangePassword.aspx"></asp:HyperLink>
+                        </span><span style="border: none">
+                            <asp:LoginStatus ID="LoginStatusLS" runat="server" LogoutAction="Redirect" LogoutText="Log Out"
+                                OnLoggingOut="LoginStatusLS_LoggingOut" LogoutPageUrl="~/Login.aspx" Font-Bold="True" />
+                        </span>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div id="ProfilePicture">
+                <asp:Image ID="imgProfile" runat="server" Width="85px" />
+            </div>
+        </div>
+        <div id="TopNavigationMenu">
+            <div>
+                <uc:SANavMenu ID="SuperAdminNavMenu" runat="server" Visible="false" />
+            </div>
+            <div id="ClientMenu" runat="server">
+                <div style="padding: 0px 20px 20px;" id="BusinessName" runat="server" visible="false">
+                    <span style="color: #2077B4;">
+                        <asp:Label ID="lblClientBusinessName" runat="server" CssClass="clientNameTitle"></asp:Label></span>
+                </div>
+                <div style="clear: both;" class="clientMenu">
+                    <uc:CANavMenu ID="ClientAdminNavMenu" runat="server" Visible="false" />
+                </div>
+            </div>
+        </div>
+        <div style="clear: both">
+        </div>
+        <div id="ContentBody" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="ContentFooter" runat="server">
+            <ul>
+                <li>
+                    <asp:HyperLink ID="hlSendEmail" runat="server" NavigateUrl="~/Admin/SendEmail.aspx"
+                        Text="Send Email"></asp:HyperLink></li>
+                <li id="liTermsAndConditions" runat="server">
+                    <asp:HyperLink ID="hlTermsAndConditions" runat="server" NavigateUrl="~/Admin/TermsAndConditionsPrivacyPolicy.aspx?TermsAndConditions=yes"
+                        Text="Terms &amp; Conditions"></asp:HyperLink></li>
+                <li id="liPrivacyPolicy" runat="server">
+                    <asp:HyperLink ID="hlPrivacyPolicy" runat="server" NavigateUrl="~/Admin/TermsAndConditionsPrivacyPolicy.aspx?PrivacyAndPolicy=yes"
+                        Text="Privacy Policy"></asp:HyperLink></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:Menu CssClass="menuTab" StaticMenuItemStyle-CssClass="tab" Orientation="Horizontal" runat="server"/>
+
+<asp:RequiredFieldValidator runat="server" CssClass="errorValidator" Font-Size="12px" />
+<asp:RegularExpressionValidator runat="server" CssClass="errorValidator" Font-Size="12px" />
+<asp:CompareValidator runat="server" CssClass="errorValidator" Font-Size="12px" />
+<asp:RangeValidator runat="server" CssClass="errorValidator" Font-Size="12px" />
+
+<asp:Label runat="server" CssClass="errorValidator" Font-Size="12px" SkinID="Error" ></asp:Label>
+<asp:Label runat="server" CssClass="labelForLogin" SkinID="AdminLoginBox" />
+<asp:Label runat="server" ForeColor="#77797B" Font-Bold="true" SkinID="Confirmation" Font-Size="12px" Width="150px"/>
+<asp:Label runat="server" CssClass="displayLabel" SkinID="DisplayLabel" Font-Size="12px"/>
+<asp:Label runat="server" CssClass="displayLabel" SkinID="DisplayLabelForDetails" Font-Size="12px" Width="230px"/>
+<asp:Label runat="server" CssClass="labelExample" SkinID="SmallExample"/>
+<asp:Label runat="server" CssClass="labelSendTo" SkinID="SendTo"/>
+
+<asp:TextBox runat="server" CssClass="textBox"/>
+<asp:TextBox runat="server" CssClass="textBox autoComplete" SkinID="AutoComplete"/>
+<asp:TextBox runat="server" CssClass="textBox" SkinID="AdminLoginBox" Font-Size="16px" />
+<asp:TextBox runat="server" CssClass="textBox textBoxSearch" SkinID="SearchBox"/>
+<asp:TextBox runat="server" CssClass="textInput" SkinID="Comment" />
+<asp:TextBox runat="server" CssClass="textBox" SkinID="ContactUs" Width="400px"/>
+
+<asp:Button runat="server" CssClass="button" SkinID="Button" />
+<asp:Button runat="server" CssClass="buttonForLogin" SkinID="AdminLoginBox" />
+<asp:Button runat="server" CssClass="buttonSearch" SkinID="SearchButton" />
+<asp:Button runat="server" CssClass="buttonSearchSmall" SkinID="SearchButtonSmall" />
+<asp:Button runat="server" CssClass="buttonFrontEnd" SkinID="ClientProfile" />
+
+<asp:LinkButton runat="server"  CssClass="paginationLinkButton" SkinID="Pagination"></asp:LinkButton>
+
+
+<asp:DropDownList runat="server" CssClass="textBox" Width="192px" />
+<asp:DropDownList runat="server" CssClass="textBox" Width="100px" SkinID="RankBox" />
+<asp:DropDownList runat="server" CssClass="textBox textBoxSearch" SkinID="SearchBox" Font-Size="16px" Width="240px"/>
+
+<asp:FileUpload runat="server"  Width="275px" Size="29" CssClass="textBox fileUpload"/>
+<asp:FileUpload runat="server"  Width="275px" Size="29" CssClass="multi textBox fileUpload" SkinID="Multiple"/>
+    
+<asp:GridView runat="server" CssClass="GridViewStyle" BorderWidth="0">
+    <HeaderStyle CssClass="HeaderStyle" />
+    <RowStyle CssClass="RowStyle" />
+    <AlternatingRowStyle CssClass="AltRowStyle" />
+    <SelectedRowStyle CssClass="SelectedRowStyle" />
+    <FooterStyle CssClass="FooterStyle" />
+    <PagerStyle CssClass="PagerStyle" />
+    <EmptyDataRowStyle CssClass="normalMsg" />
+</asp:GridView>

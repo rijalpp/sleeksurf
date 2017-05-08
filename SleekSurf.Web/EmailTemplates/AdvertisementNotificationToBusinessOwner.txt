@@ -1,0 +1,48 @@
+﻿<div style="height: 100px; background-position: left; display: <%LogoDisplay%>;">
+            <img src="<%Logo%>" width="250" height="100" alt="logo" />
+        </div>
+        <div style="width: 780px; margin: 20px 0px; background-color: #ffffff;">
+            <div style="border: 1px solid #83c5fc;">
+                <div style="color: #FFF; font-size: 18px; padding: 10px 20px; background-color: #4fa8f3;
+                    background: #4fa8f3 url('<%TopBackGround%>') repeat-x top;
+                    display: block;">
+                    Advertisement Registration Notification
+                </div>
+                <div style="padding: 20px;">
+                    <div style="float: left; width:400px; padding-right:5px;">
+                        <span style="margin: 0px; padding: 10px 0px; display: block;">An Advertisement
+                            has been successfully added. The advertisement details are as follows: </span>
+						<span style="margin: 0px; padding: 10px 0px; display: block;"><span style="display: inline-block;
+                            width: 120px;">Added By: </span><span style="font-weight: bold;"><%AddedBy%></span>
+						<span style="margin: 0px; padding: 10px 0px; display: block;"><span style="display: inline-block;
+                            width: 120px;">Advertiser: </span><span style="font-weight: bold;"><%Advertiser%></span>
+                        <span style="margin: 0px; padding: 10px 0px; display: block;"><span style="display: inline-block;
+                            width: 120px;">Ad Title: </span><span style="font-weight: bold;"><%AdTitle%></span>
+                        </span><span style="margin: 0px; padding: 10px 0px; display: block;"><span style="display: inline-block;
+                            width: 120px;">Dimension: </span><span style="font-weight: bold;"><%Dimension%></span>
+                        </span><span style="margin: 0px; padding: 10px 0px; display: block;"><span style="display: inline-block;
+                            width: 120px;">Start Date: </span><span style="font-weight: bold;"><%StartDate%></span>
+                        </span><span style="margin: 0px; padding: 10px 0px; display: block;"><span style="display: inline-block;
+                            width: 120px;">Expiry Date: </span><span style="font-weight: bold;"><%EndDate%></span>
+                        </span><span style="margin: 0px; padding: 10px 0px; display: block;"><span style="display: inline-block;
+                            width: 120px;">Amount Paid: </span><span style="font-weight: bold;"><%AmountPaid%></span>
+                        </span><span style="margin: 0px; padding: 10px 0px; display: block;"><span style="display: inline-block;
+                            width: 120px;">Navigation Url: </span><span style="font-weight: bold;"><%NavigationUrl%></span>
+                        </span>
+                    </div>
+                    <div style="float: left; padding-top:10px; margin-left:10px;">
+                        <span style="margin: 0px; padding: 20px 5px;"><span style=" display:block; padding-bottom:5px;">
+                        Advertisement Image 
+                        </span><span>
+                                <img src="<%ImageUrl%>" alt="" style="border: 1px solid gray;" width="<%width%>" height="<%height%>" />
+                            </span></span>
+                    </div>
+                    <div style="clear: both;">
+                        <span style="margin: 0px; padding: 10px 0px; display: block;">
+                            <br />
+                           SleekSurf Auto genetated message.
+                             </span>
+                    </div>
+                </div>
+            </div>
+        </div>

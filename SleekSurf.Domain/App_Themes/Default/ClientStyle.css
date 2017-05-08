@@ -1,0 +1,931 @@
+﻿*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body, .normalBody
+{
+    background-color: #F7F7F7;
+    color: #606060;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font: normal 30px Arial, Verdana, sans-serif , Tahoma, Helvetica;
+    letter-spacing: 0.4px;
+}
+
+h1
+{
+    font-size: 36px;
+}
+
+h2
+{
+    font-size: 30px;
+}
+
+h3
+{
+    font-size: 24px;
+}
+
+h4
+{
+    font-size: 18px;
+}
+
+h5
+{
+    font-size: 16px;
+}
+
+h6
+{
+    font-size: 14px;
+}
+
+a
+{
+    color: #484C65;
+    text-decoration: none;
+    outline: 0px;
+}
+
+a:hover
+{
+    color: #999;
+}
+
+p
+{
+    color: #606060;
+    margin: 20px 0px;
+    text-align: justify;
+    font: 12px/18px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.successMsg
+{
+    min-height: 50px;
+    padding: 20px 20px 20px 100px;
+    background: #E2F7DC url(Images/Success.png) no-repeat 10px 15px;
+    border: 1px solid #B3DFA4;
+    font-size: 14px;
+    display: block;
+    text-align: justify;
+}
+
+.errorMsg
+{
+    min-height: 50px;
+    padding: 20px 20px 20px 100px;
+    border: 1px solid #FECAD3;
+    background: #FDD9E1 url(Images/Error.png) no-repeat 10px 15px;
+    font-size: 14px;
+    display: block;
+    text-align: justify;
+}
+
+.normalMsg
+{
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+    display: block;
+    border: 1px solid #DDD;
+    text-align: justify;
+    font-weight: bold;
+}
+
+#MasterParent
+{
+    height: 30px;
+    background: url(Images/Background.png) repeat-x top left;
+}
+#MasterParentContent, #ClientPageContent, #PageContent, #ClientFooterAdContent, #ClientFooterContent
+{
+    width: 1024px;
+    margin: 0px auto;
+    position: relative;
+}
+
+#ClientBodyContent
+{
+    clear: both;
+    min-height: 400px;
+    text-align: justify;
+    font: 12px/18px Verdana, Arial, Helvetica, sans-serif;
+}
+
+#ClientFooterContent
+{
+    color: #FFFFFF;
+}
+
+#ClientFooterContent a
+{
+    color: #897E6E;
+}
+
+#ClientFooterContent a:hover
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+#LogoAtClient
+{
+    float: left;
+}
+
+#MasterParentContent #LogoAtClient a
+{
+    background: transparent url(Images/LogoSleekSurf.png) no-repeat top left;
+    height: 70px;
+    width: 250px;
+    display: block;
+}
+
+#SocialSharingIcon
+{
+    float: right;
+    padding-top: 8px;
+}
+
+#ClientPageWrapper
+{
+    clear: both;
+    margin: 0px;
+    background: #FFFFFF url(Images/BackgroundHead.png) repeat-x left bottom;
+    height: 110px;
+    display: block;
+}
+
+#ClientFooterWrapper
+{
+    clear: both;
+    background: #FFFFFF url(Images/Background.png) repeat-x left bottom;
+    display: block;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+#ClientFooterAdWrapper
+{
+    clear: both;
+    display: block;
+    padding: 10px 0px;
+}
+
+.clientBody
+{
+    background-color: #FFFFFF;
+}
+
+.clientName
+{
+    padding: 10px 0px; /*font: 30px QuickSand;*/
+}
+
+/*navigation*/
+
+#Client #NavigationMenu .ClientNavigation
+{
+    margin-top: 9px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 13px;
+    right: 5px;
+    position: absolute;
+    z-index: 100;
+}
+
+#NavigationMenu .ClientNavigation, #NavigationMenu .ClientNavigation ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    position: relative;
+    line-height: 50px;
+    z-index: 5;
+}
+
+#Client #NavigationMenu .ClientNavigation a
+{
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    padding: 0 21px;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    z-index: 35;
+    position: relative;
+    float: left;
+}
+
+#Client #NavigationMenu .ClientNavigation li
+{
+    float: left;
+    position: relative;
+    z-index: 20;
+}
+
+#Client #NavigationMenu .ClientNavigation li li
+{
+    border-left: none;
+    margin-top: 0;
+    border-top: 1px solid;
+}
+
+#Client #NavigationMenu .ClientNavigation ul
+{
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 29px;
+    width: 192px;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom: none;
+}
+
+#Client #NavigationMenu .ClientNavigation li ul a
+{
+    width: 150px;
+    height: auto;
+    float: left;
+    text-align: left;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    line-height: 24px;
+    padding: 4px 21px;
+    font-size: 12px;
+}
+
+#Client #NavigationMenu .ClientNavigation ul ul
+{
+    top: auto;
+}
+
+#Client #NavigationMenu .ClientNavigation li ul ul
+{
+    left: 192px;
+    top: -2px;
+}
+
+#Client #NavigationMenu .ClientNavigation li:hover ul ul, #Client #NavigationMenu .ClientNavigation li:hover ul ul ul, #Client #NavigationMenu .ClientNavigation li:hover ul ul ul ul
+{
+    display: none;
+}
+#Client #NavigationMenu .ClientNavigation li:hover ul, #Client #NavigationMenu .ClientNavigation li li:hover ul, #Client #NavigationMenu .ClientNavigation li li li:hover ul, #Client #NavigationMenu .ClientNavigation li li li li:hover ul
+{
+    display: block;
+}
+
+/*background pointer*/
+/* Represents the background of the highlighted menu-item. */
+#Client #NavigationMenu .ClientNavigation li.back
+{
+    width: 9px;
+    height: 30px;
+    z-index: 8;
+    position: absolute;
+    top: 20px !important;
+    top: 39px; /*ie6fix*/
+}
+
+#Client #NavigationMenu .ClientNavigation li.back .left
+{
+    height: 30px;
+    margin-right: 9px;
+}
+
+/************************************************************************
+navigation
+*************************************************************************/
+
+#NavigationMenu .ClientNavigation
+{
+    background: transparent url(Images/BorderVertical.png) repeat-y top right;
+}
+
+#NavigationMenu .ClientNavigation a
+{
+    color: #777;
+    background: transparent url(Images/BorderVertical.png) repeat-y top left;
+}
+
+#NavigationMenu .ClientNavigation .current a
+{
+    color: #222;
+}
+
+#NavigationMenu .ClientNavigation a:hover
+{
+    color: #444;
+}
+
+#NavigationMenu .ClientNavigation ul
+{
+    background: #fff;
+    border-color: #ddd;
+}
+
+#Client #NavigationMenu .ClientNavigation ul a
+{
+    background: #fff;
+    border-color: #ddd;
+    color: #777;
+}
+#Client #NavigationMenu .ClientNavigation ul a:hover
+{
+    background: #f7f7f7;
+    color: #444;
+}
+
+#Client #NavigationMenu .ClientNavigation li li
+{
+    border-color: #fff;
+}
+
+#Client #NavigationMenu .ClientNavigation li.back
+{
+    background: transparent url(Images/ArrowMenu.png) no-repeat bottom center;
+}
+
+
+
+/*********************************Start of Content Page ***********************************/
+
+#ClientContentPage
+{
+    background: #F8F8F8 url(Images/Background.png) repeat-x left -800px;
+    position: relative;
+}
+
+#ClientContent
+{
+    margin: 0px auto;
+    position: relative;
+    background: transparent url(Images/BackgroundFeature.png) no-repeat center 392px;
+    top: 30px;
+    min-height: 450px;
+}
+
+#ClientContentPromotionLocation
+{
+    width: 1024px;
+    margin: 0px auto;
+    clear: both;
+}
+
+#ClientContentPromotion
+{
+    width: 650px;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+}
+
+#ClientContentLocation
+{
+    width: 330px;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+}
+
+.featureWrapper
+{
+    position: relative;
+}
+
+.featuredInside
+{
+    position: relative;
+    height: 400px;
+    width: 910px;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.fancyborder
+{
+    position: absolute;
+    z-index: 99;
+    display: block;
+    background: transparent url(Images/FancyBorder.png) repeat 0px 0px;
+}
+
+.fancyborderTop
+{
+    top: 0;
+    left: 10px;
+    height: 10px;
+    width: 100%;
+}
+
+.fancyborderLeft
+{
+    bottom: 10px;
+    left: 0;
+    height: 100%;
+    width: 10px;
+}
+
+.fancyborderRight
+{
+    top: 10px;
+    right: 0;
+    height: 100%;
+    width: 10px;
+}
+
+.fancyborderBottom
+{
+    bottom: 0;
+    right: 10px;
+    height: 10px;
+    width: 100%;
+}
+
+.featured
+{
+    height: 390px;
+    width: 910px;
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    background: url(Images/Preload.gif) #fff no-repeat center center;
+}
+
+.featureOne
+{
+    border: medium none;
+    display: block;
+}
+
+#Client .slidecontrolls a
+{
+    background: transparent url(Images/SlideControlls.png) no-repeat -28px top;
+}
+
+#Client .slidecontrolls .active_item, #Client .slidecontrolls a:hover
+{
+    background: transparent url(Images/SlideControlls.png) no-repeat 2px top;
+}
+
+
+#Client .entry .slidecontrolls
+{
+    bottom: -12px;
+    left: 4px;
+    position: relative !important;
+    z-index: 10;
+    top: auto;
+}
+
+#Client .slidecontrolls
+{
+    position: absolute;
+    right: 45px;
+    top: 415px; /* width:10px; */
+    z-index: 10;
+}
+
+#Client .slidecontrolls a
+{
+    height: 10px;
+    padding: 2px 2px;
+    width: 10px;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    float: left;
+}
+
+#PromoSlider li.promotionSlide
+{
+    width: 800px;
+    height: 360px;
+    background: url(Images/PromotionBackgroundImage.png) no-repeat;
+    display: block;
+    padding: 20px 20px 20px 90px;
+}
+
+.promotionImage, .promotionInfo
+{
+    float: left;
+}
+
+.promotionImage
+{
+    width: 325px;
+    background-color: #FFF;
+    padding: 5px;
+}
+
+.promotionInfo
+{
+    padding-left: 20px;
+    width: 435px;
+}
+
+.promotionInfo h2
+{
+    color: #E3E3E3;
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+    width: 435px;
+    overflow: hidden;
+}
+
+.promotiondate
+{
+    color: #FFF;
+    margin: 10px 0px;
+    font-size: 16px;
+}
+
+.detailbutton
+{
+    float: right;
+    margin-top: 45px;
+    background-color: #6ebfe5;
+    border: 1px solid #4fa0c5;
+}
+
+.promotionInfo a
+{
+    text-decoration: none;
+    color: #FFF;
+    width: 140px;
+    display: block;
+    background: url(Images/Arrow.png) no-repeat right;
+    margin: 10px 40px;
+    letter-spacing: 2px;
+}
+
+.promotionInfo a:hover
+{
+    color: #4299e1;
+}
+
+.promotionDescription
+{
+    clear: both;
+    background: url(Images/DescriptionBackgroundImage.png) repeat-x top left;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.promotionDescription h3
+{
+    color: #DEDEDE;
+    font-size: 26px;
+    margin: 0px;
+}
+
+.descriptiontext
+{
+    color: #DEDEDE;
+    text-align: justify;
+}
+
+#Slider, #PromotionList
+{
+    clear: both;
+}
+
+#Slider .promo, #PromotionList .promo, #PromotionDetails .promo
+{
+    clear: both;
+    display: inline-block;
+    padding: 20px 0px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+#PromotionDetails .promo .gallery
+{
+    margin-top: 20px;
+}
+
+#PromotionDetails .promo .gallery .titleBar, #PromotionDetails .promo .gallery .footer
+{
+    display: table;
+}
+
+#PromotionDetails .promo .gallery .titleBar .titleBarLeft
+{
+    width: 10px;
+    background: url(Images/TitleBarLeft.jpg) no-repeat top left;
+    display: table-cell;
+}
+
+#PromotionDetails .promo .gallery .titleBar .titleBarMiddle
+{
+    padding: 9px 0px;
+    width: 700px;
+    color: #666666;
+    font: 16px "Century Gothic" , Arial, Helvetica, sans-serif;
+    background: url(Images/TitleBarMiddle.jpg) repeat-x top left;
+    display: table-cell;
+}
+
+#PromotionDetails .promo .gallery .titleBar .titleBarRight
+{
+    width: 10px;
+    background: url(Images/TitleBarRight.jpg) no-repeat top left;
+    display: table-cell;
+}
+
+#PromotionDetails .promo .gallery .divider
+{
+    height: 2px;
+    background: url(Images/TitleContainerDivider.jpg) repeat-x top left;
+    display: block;
+    width: 100%;
+}
+
+#PromotionDetails .promo .gallery #ImageGallery, #PromotionDetails .promo .gallery #VideoGallery
+{
+    background: url(Images/TitleContainerBg.jpg) repeat-x bottom left;
+}
+
+#PromotionDetails .promo .gallery .footer .footerLeft
+{
+    height: 8px;
+    width: 10px;
+    background: url(Images/TitleContainerFooterLeft.jpg) no-repeat top left;
+    display: table-cell;
+}
+
+#PromotionDetails .promo .gallery .footer .footerMiddle
+{
+    height: 8px;
+    width: 700px;
+    background: url(Images/TitleContainerFooterMiddle.jpg) repeat-x top left;
+    display: table-cell;
+}
+
+#PromotionDetails .promo .gallery .footer .footerRight
+{
+    height: 8px;
+    width: 10px;
+    background: url(Images/TitleContainerFooterRight.jpg) no-repeat top left;
+    display: table-cell;
+}
+
+.promoImage
+{
+    width: 190px;
+    padding: 8px;
+    border: 1px solid #DDDDDD;
+    float: left;
+    display: block;
+    min-height: 85px;
+}
+
+.promoImage img[id*=PromotionImage]
+{
+    width: 190px;
+}
+
+.promoDetails
+{
+    float: left;
+    width: 400px;
+    padding: 0px 20px;
+}
+
+.promoDetails a.promoTitle
+{
+    text-decoration: none;
+    color: #484c65;
+    font-weight: bold;
+}
+
+.promoDetails .promoDate
+{
+    color: #999;
+    font-size: 10px;
+    line-height: 1.1em;
+    display: block;
+    padding-top: 10px;
+}
+
+.promoDetails .promoDate span
+{
+    color: #5ac3f9;
+    font-weight: bold;
+}
+
+.promoDetails .promoDescription, .promotionInDetailsDescription
+{
+    font-size: 12px;
+    display: block;
+    margin: 10px 0px;
+    text-align: justify;
+    line-height: 18px;
+}
+
+.promoDetails .readMore
+{
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    text-align: right;
+    display: block;
+}
+
+.promoDetails a:hover.readMore, .promoDetails a:hover.promoTitle
+{
+    text-decoration: underline;
+    color: #5ac3f9;
+}
+
+div[id$=ContactDetails] > div
+{
+    margin: 10px;
+}
+
+#ClientContentLocation .address
+{
+    margin: 0px auto;
+    width: auto;
+    color: #5ac3f9;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: justify;
+}
+
+.viewInLargePanel
+{
+    text-align: right;
+    padding: 10px;
+}
+
+.viewInLarge
+{
+    background: #FFFFFF url(Images/ViewInLarge.jpg) no-repeat top right;
+    height: 20px;
+    padding-right: 30px;
+    padding-top: 5px;
+    display: inline-block;
+}
+
+#GetDirection
+{
+    margin-top: 10px;
+}
+
+#GetDirection div
+{
+    margin: 5px 0px;
+}
+
+#PageContent
+{
+    margin-top: 10px;
+}
+
+#PageMainContent
+{
+    width: 790px;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.advertisement
+{
+    margin-top: 37px;
+    background: transparent url(Images/TopAdTab.png) no-repeat top right;
+    padding-top: 23px;
+    display:block;
+}
+
+.advertisementBottom
+{
+    background: transparent url(Images/BottomAdTab.png) no-repeat bottom right;
+    padding-bottom: 23px;
+    display:block;
+}
+
+#GoogleAd, #RightAdvertisements
+{
+    max-width: 202px;
+    float: right;
+    padding: 5px;
+    border: 1px solid #14AED0;
+}
+
+.rightSideAd
+{
+    max-width: 202px;
+    display: block;
+    overflow: hidden;
+}
+
+.rightSideAd img, .footerAd img
+{
+    border: 1px solid #000000;
+}
+
+#FooterAdsSection
+{
+    width: 790px;
+    margin-right: 10px;
+}
+
+#FooterAds
+{
+    max-height: 120px;
+    padding: 10px 0px;
+    border-top: 2px solid #14AED0;
+    border-bottom: 2px solid #14AED0;
+    display: inline-block;
+}
+
+.footerAd
+{
+    max-height: 120px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.header
+{
+    background: transparent url(Images/BorderHorizontal.png) repeat-x bottom right;
+    padding-bottom: 10px;
+}
+
+#Services
+{
+    margin: 20px;
+}
+
+#Services ul li
+{
+    list-style-image: url(Images/Square.png);
+    text-align: justify;
+    margin: 20px 0px;
+}
+
+#Services li li
+{
+    list-style-image: url(Images/SquareSmall.png);
+    margin: 10px;
+}
+
+#ContactForm, #ContactExtension
+{
+    float: left;
+}
+
+#ContactForm
+{
+    margin-right: 20px;
+    width: 660px;
+}
+
+#ContactExtension
+{
+    padding-left: 10px;
+    width: 330px;
+}
+
+#SignUpContent, #SignUpNavigation, #SignUpContentDetails, #InnerContent, #SignUpSummary, #PasswordRecovery, #ServiceDetails, #PromotionDetails, #CategoryDetails, #AccountDetails, #EventDetails, #PackageDetails, #PackageOptionDetails, #PackageOrderDetails, #MediaDetails, #ChangePassword, #panelAccountForSuperAdminView
+{
+    width: 720px;
+    margin: 0px auto;
+}
+
+#SignUpContent div
+{
+    padding: 5px 10px 5px 120px;
+}
+
+#SignUpContent div .adminOnly, #SignUpContentDetails div .adminOnly, #AccountDetails .adminOnly
+{
+    padding: 0px;
+}
+
+#SignUpContentDetails div, #AccountDetails div, #ContactUsForm div, #ChangePassword div, #panelAccountForSuperAdminView div
+{
+    padding: 5px 10px;
+    clear: both;
+    display: block;
+}
+

@@ -1,0 +1,29 @@
+﻿<div style="margin: 0px auto; font: normal 30px Arial, Verdana, sans-serif , Tahoma, Helvetica;
+        width: 700px; color: #606060;">
+        <div style="height: 100px; background-position: left;">
+            <img src="<%Logo%>" style="width: 250px; height: 100px;"
+                alt="logo" />
+        </div>
+        <div style="width: 680px; margin: 5px 0px; background-color: #ffffff;">
+            <div style="border: 1px solid #83c5fc;">
+                <div style="color: #FFF; font-size: 18px; padding: 10px 20px; background-color: #4fa8f3;
+                    background: #4fa8f3 url('<%TopBackGround%>') repeat-x top;
+                    display: block;">
+                    Daily Routine Check up
+                </div>
+                <div style="padding: 20px; font-size: 12px;">
+                    <span style="margin: 0px; padding: 10px 0px; display: block;">Hi&nbsp; Webmaster,
+                    </span><span style="margin: 0px; padding: 10px 0px; display: block;">
+					       <%description%>
+                       </span>
+					   <span style="margin: 0px; padding: 10px 0px; display: block;">
+					       The Email has been sent as follows: 
+						   <%No%>
+                       </span>
+					   <span style="margin: 0px; padding: 10px 0px; display: block;">
+					       SleekSurf auto generated message.
+                       </span>
+                </div>
+            </div>
+        </div>
+    </div>

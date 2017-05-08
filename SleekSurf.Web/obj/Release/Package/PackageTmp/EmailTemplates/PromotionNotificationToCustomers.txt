@@ -1,0 +1,50 @@
+﻿<div style="margin: 0px auto; font: normal 30px Arial, Verdana, sans-serif , Tahoma, Helvetica;
+        width: 700px; color: #606060;">
+        <div style="height: 100px; background-position: left; display:<%LogoDisplay%>;">
+            <img src="<%Logo%>" style="width: 250px; height: 100px;"
+                alt="logo" />
+        </div>
+        <div class="temp" style="display: <%DisplayLink%>; width: 680px; text-align: center; font-size: 10px;">
+            Having trouble viewing this message? Please <a href="<%ViewOnline%>">View Online</a>.</div>
+        <div style="width: 680px; margin: 5px 0px; background-color: #ffffff;">
+            <div style="border: 1px solid #83c5fc;">
+                <div style="color: #FFF; font-size: 18px; padding: 10px 20px; background-color: #4fa8f3;
+                    background: #4fa8f3 url('<%TopBackGround%>') repeat-x top;
+                    display: block;">
+                    Promotion
+                </div>
+                <div style="padding: 20px; font-size: 12px;">
+                    <span style="margin: 0px; padding: 10px 0px; display: block;">Hi&nbsp;<%CustomerFullName%>,
+                    </span><span style="margin: 0px; padding: 10px 0px; display: block;">We are pleased
+                        to advise you that we are offering the following promotion to our valuable customers
+                        for the limited period of time as given below. </span>
+                </div>
+                <div style="padding: 0px 20px;">
+                    <div style="width: 190px; padding: 8px; border: 1px solid #DDDDDD; float: left; display: block;
+                        min-height: 85px;">
+                        <div style="height: 85px; overflow: hidden;">
+                            <img src="<%PromotionPhoto%>" alt="Promotion Photo" style="width: 190px;" />
+                        </div>
+                    </div>
+                    <div style="float: left; width: 370px; padding: 0px 20px;">
+                        <div style="font-size: 18px; margin: 0px; padding: 0px; font-variant: small-caps;">
+                            <%PromotionName%>
+                        </div>
+                        <span style="color: #999; font-size: 10px; line-height: 1.1em; display: block; padding-top: 10px;">
+                            <span>Start Date:</span> <%StartDate%> - <span>End Date:</span> <%EndDate%> </span>
+                    </div>
+                    <div style="clear: both;">
+                    </div>
+                    <div style="font-size: 12px; display: block; margin: 10px 0px; text-align: justify;
+                        line-height: 18px; width: 620px;">
+                        <%Description%>
+                    </div>
+                    <div style="margin: 40px 0px 20px; text-align: center; border-top: 2px solid #CCCCCC;">
+                        <a href="<%Feedback%>" style="padding-right: 10px; border-right: 1px solid #CDCDCD;
+                            text-decoration: none; color: #666666; font-size: 12px; visibility:<%DisplayLink%>;">Feedback</a> <a href="<%Unsubscribe%>"
+                                style="font-size: 12px; text-decoration: none; color: #666666;">Unsubscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

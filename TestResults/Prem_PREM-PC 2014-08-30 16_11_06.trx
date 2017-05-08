@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="fea02b6d-a787-4876-bd91-08161312bd57" name="Prem@PREM-PC 2014-08-30 16:11:06" runUser="Prem-PC\Prem" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="703de9c8-b910-474a-9a8e-8ed25b1f0dbf">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Prem_PREM-PC 2014-08-30 16_11_06">
+      <DeploymentItem filename="F:\SleekSurf\SleekSurf.Entity\bin\Debug\SleekSurf.Entity.dll" />
+      <DeploymentItem filename="F:\SleekSurf\SleekSurf.DataAccess\bin\Debug\SleekSurf.DataAccess.dll" />
+      <DeploymentItem filename="F:\SleekSurf\SleekSurf.FrameWork\bin\Debug\SleekSurf.FrameWork.dll" />
+      <DeploymentItem filename="F:\SleekSurf\SleekSurf.Manager\bin\Debug\SleekSurf.Manager.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-30T16:11:06.2791514+10:00" queuing="2014-08-30T16:11:12.3865007+10:00" start="2014-08-30T16:11:12.5565105+10:00" finish="2014-08-30T16:11:43.9733074+10:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="InsertClientTest" storage="f:\sleeksurf\clientmanagertest\bin\debug\clientmanagertest.dll" id="e03c7bc3-9316-c48f-ec82-0695f07fa640">
+      <Execution id="f5ad7f68-ea48-47bf-9ce7-d5957edf74e1" />
+      <TestMethod codeBase="F:/SleekSurf/ClientManagerTest/bin/Debug/ClientManagerTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ClientManagerTest.ClientManagerTest, ClientManagerTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InsertClientTest" />
+    </UnitTest>
+    <UnitTest name="GetCategoriesTest" storage="f:\sleeksurf\clientmanagertest\bin\debug\clientmanagertest.dll" id="63c4ebde-e0d1-0fc6-0fe6-9938c9725f45">
+      <Execution id="f2c3e9f3-6ebe-48a0-86b7-4c3c5560b0f8" />
+      <TestMethod codeBase="F:/SleekSurf/ClientManagerTest/bin/Debug/ClientManagerTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ClientManagerTest.ClientManagerTest, ClientManagerTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetCategoriesTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="e03c7bc3-9316-c48f-ec82-0695f07fa640" executionId="f5ad7f68-ea48-47bf-9ce7-d5957edf74e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="63c4ebde-e0d1-0fc6-0fe6-9938c9725f45" executionId="f2c3e9f3-6ebe-48a0-86b7-4c3c5560b0f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f5ad7f68-ea48-47bf-9ce7-d5957edf74e1" testId="e03c7bc3-9316-c48f-ec82-0695f07fa640" testName="InsertClientTest" computerName="PREM-PC" duration="00:00:17.9356173" startTime="2014-08-30T16:11:12.7445212+10:00" endTime="2014-08-30T16:11:32.6136577+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5ad7f68-ea48-47bf-9ce7-d5957edf74e1">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method ClientManagerTest.ClientManagerTest.InsertClientTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at SleekSurf.FrameWork.BasePage.get_FullBaseUrl() in F:\SleekSurf\SleekSurf.FrameWork\BasePage.cs:line 37
+   at SleekSurf.FrameWork.Helpers.LogError(Exception ex) in F:\SleekSurf\SleekSurf.FrameWork\Helpers.cs:line 300
+   at SleekSurf.Manager.ClientManager.InsertClient(ClientDetails clientDetail) in F:\SleekSurf\SleekSurf.Manager\ClientManager.cs:line 51
+   at ClientManagerTest.ClientManagerTest.InsertClientTest() in F:\SleekSurf\ClientManagerTest\ClientManagerTest.cs:line 78
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f2c3e9f3-6ebe-48a0-86b7-4c3c5560b0f8" testId="63c4ebde-e0d1-0fc6-0fe6-9938c9725f45" testName="GetCategoriesTest" computerName="PREM-PC" duration="00:00:11.0932515" startTime="2014-08-30T16:11:32.6216581+10:00" endTime="2014-08-30T16:11:43.7192929+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2c3e9f3-6ebe-48a0-86b7-4c3c5560b0f8">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method ClientManagerTest.ClientManagerTest.GetCategoriesTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at SleekSurf.FrameWork.BasePage.get_BaseUrl() in F:\SleekSurf\SleekSurf.FrameWork\BasePage.cs:line 25
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

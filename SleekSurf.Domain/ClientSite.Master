@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ClientSite.master.cs" Inherits="SleekSurf.Domain.ClientSite" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <style type="text/css">
+        @font-face
+        {
+            font-family: QuickSand;
+            src: url('../Scripts/Fonts/QuicksandBook.eot');
+        }
+    </style>
+    <link rel="stylesheet" href="../Scripts/PrettyPhoto/css/prettyPhoto.css" type="text/css"
+        media="screen" charset="utf-8" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="Client" class="clientBody" runat="server">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager" runat="server">
+        <Scripts>
+            <asp:ScriptReference Path="~/Scripts/PrettyPhoto/js/jquery.js" />
+            <asp:ScriptReference Path="~/Scripts/PrettyPhoto/js/cufon.js" />
+            <asp:ScriptReference Path="~/Scripts/PrettyPhoto/js/quicksand.font.js" />
+            <asp:ScriptReference Path="~/Scripts/PrettyPhoto/js/jquery.prettyPhoto.js" />
+            <asp:ScriptReference Path="~/Scripts/PrettyPhoto/js/flashplayer/flowplayer-3.1.4.min.js" />
+            <asp:ScriptReference Path="~/Scripts/PrettyPhoto/js/MenuSelection.js" />
+            <asp:ScriptReference Path="~/Scripts/PrettyPhoto/js/custom.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <div>
+        <div id="MasterParent">
+            <div id="MasterParentContent">
+                
+                <div id="SocialSharingIcon">
+                    <!-- AddThis Button BEGIN -->
+                    <div class="addthis_toolbox addthis_default_style ">
+                        <a class="addthis_button_preferred_1"></a><a class="addthis_button_preferred_2">
+                        </a><a class="addthis_button_preferred_3"></a><a class="addthis_button_preferred_4">
+                        </a><a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style">
+                        </a>
+                    </div>
+                    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e4c9bb34c7ae462"></script>
+                    <!-- AddThis Button END -->
+                </div>
+            </div>
+        </div>
+        <div id="ClientPageWrapper">
+            <div id="ClientPageContent">
+                <div class="clientName">
+                    <h2>
+                        <asp:Label ID="lblClientName" runat="server" SkinID="BusinessName"></asp:Label></h2>
+                </div>
+                <div style="float: right">
+                    <asp:Menu ID="NavigationMenu" runat="server" StaticMenuStyle-CssClass="ClientNavigation"
+                        Orientation="Horizontal" EnableTheming="false">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
+                            <asp:MenuItem NavigateUrl="~/Promotion.aspx" Text="Promotions" />
+                            <asp:MenuItem NavigateUrl="~/RegisterCustomer.aspx" Text="Register" />
+                            <asp:MenuItem NavigateUrl="~/AboutUs.aspx" Text="About Us" />
+                            <asp:MenuItem NavigateUrl="~/ContactUs.aspx" Text="Contact Us" />
+                        </Items>
+                    </asp:Menu>
+                </div>
+            </div>
+        </div>
+        <div id="ClientBodyContent">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="ClientFooterWrapper">
+            <script type="text/javascript">
+                $(function () {
+                    $("#ClientFooterContent>a:not(:last)").each(function () {
+                        $(this).after("<span style='display:inline-block; padding: 0px 5px; color:#FFFFFF'> | </span>");
+                    });
+                });
+            </script>
+            <div id="ClientFooterContent">
+                <asp:HyperLink ID="hlFAQs" runat="server" ToolTip="FAQs"> FAQs</asp:HyperLink>
+                <asp:HyperLink ID="hlTermsAndConditions" runat="server" ToolTip="Terms And Conditions"> Terms &amp; Conditions</asp:HyperLink>
+                <asp:HyperLink ID="hlPrivacyPolicy" runat="server" ToolTip="Terms And Conditions"> Privacy Policy</asp:HyperLink><br />
+                <span>&copy; Copyright
+                    <asp:HyperLink ID="hlClientWebsite" runat="server" Target="_blank">
+                        <asp:Label ID="lblClientBusinessName" runat="server"></asp:Label></asp:HyperLink>
+                    - Design by <a href="http://www.sleeksurf.com">SleekSurf</a> </span>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+F:\SleekSurf\SleekSurf.Web\bin\SleekSurf.Web.dll.config
+F:\SleekSurf\SleekSurf.Web\bin\SleekSurf.Web.dll
+F:\SleekSurf\SleekSurf.Web\bin\SleekSurf.Web.XmlSerializers.dll
+F:\SleekSurf\SleekSurf.Web\bin\SleekSurf.Web.pdb
+F:\SleekSurf\SleekSurf.Web\bin\SleekSurf.Entity.dll
+F:\SleekSurf\SleekSurf.Web\bin\SleekSurf.FrameWork.dll
+F:\SleekSurf\SleekSurf.Web\bin\SleekSurf.Manager.dll
+F:\SleekSurf\SleekSurf.Web\bin\SleekSurf.DataAccess.dll
+F:\SleekSurf\SleekSurf.Web\bin\SleekSurf.Entity.pdb
+F:\SleekSurf\SleekSurf.Web\bin\SleekSurf.FrameWork.pdb
+F:\SleekSurf\SleekSurf.Web\bin\SleekSurf.Manager.pdb
+F:\SleekSurf\SleekSurf.Web\bin\SleekSurf.DataAccess.pdb
+F:\SleekSurf\SleekSurf.Web\obj\Release\SleekSurf.Web.csprojResolveAssemblyReference.cache
+F:\SleekSurf\SleekSurf.Web\obj\Release\SleekSurf.Web.dll
+F:\SleekSurf\SleekSurf.Web\obj\Release\SleekSurf.Web.pdb
+F:\SleekSurf\SleekSurf.Web\obj\Release\SleekSurf.Web.XmlSerializers.dll

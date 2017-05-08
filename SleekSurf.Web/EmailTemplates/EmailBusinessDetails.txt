@@ -1,0 +1,47 @@
+﻿<div style="margin: 0px auto; font: normal 30px Arial, Verdana, sans-serif , Tahoma, Helvetica;
+        width: 700px; color: #606060;">
+        <div style="height: 100px; background-position: left; display: <%LogoDisplay%>;">
+            <img src="<%Logo%>" style="width: 250px; height: 100px;"
+                alt="logo" />
+        </div>
+        <div style="width: 680px; margin: 5px 0px; background-color: #ffffff;">
+            <div style="border: 1px solid #83c5fc;">
+                <div style="color: #FFF; font-size: 18px; padding: 10px 20px; background-color: #4fa8f3;
+                    background: #4fa8f3 url('<%TopBackGround%>') repeat-x top;
+                    display: block;">
+                    Contact Details of The Business
+                </div>
+                <div style="padding: 5px 20px; font-size: 12px;">
+                    <span style="margin: 0px; padding: 10px 0px; display: block; font-size:16px;">The Contact details of the business you are interested.</span>
+                </div>
+                    <div style="padding:0px 20px 10px 20px;">
+                          <div>
+                              <span style="display:inline-block; width:100px; font-weight:bold; padding-right:10px; font-size:12px;">Name: </span>
+                              <span style="display:inline-block; width:300px; font-size:12px;"><%BusinessName%></span>
+                          </div>
+						  <div>
+                              <span style="display:inline-block; width:100px; font-weight:bold; padding-right:10px; font-size:12px;">Contact Person: </span>
+                              <span style="display:inline-block; width:300px; font-size:12px;"><%ContactPerson%></span>
+                          </div>
+						  <div>
+                              <span style="display:inline-block; width:100px; font-weight:bold; padding-right:10px; font-size:12px;">Contact Number: </span>
+                              <span style="display:inline-block; width:300px; font-size:12px;"><%ContactNumber%></span>
+                          </div>
+						  <div>
+                              <span style="display:inline-block; width:100px; font-weight:bold; padding-right:10px; font-size:12px;">Business Email: </span>
+                              <span style="display:inline-block; width:300px; font-size:12px;"><%BusinessEmail%></span>
+                          </div>
+                          <div>
+                              <span style="display:inline-block; width:100px; font-weight:bold; padding-right:10px; font-size:12px; vertical-align:top;">Address: </span>
+                              <span style="display:inline-block; width:300px; font-size:12px;">
+                                 <span style="display:block; width:290px;"><%Address%>,</span>
+                                 <span style="display:block; width:290px;"><%Country%></span>
+                              </span>
+                          </div>
+						  <%OtherDetails%>
+                          <div style="display:block; font-size:12px; margin-top:5px;"><%otherDescription%></div>
+                          <div style="display:block; font-size:12px; text-decoration:underline; margin:5px 0px;"><a href="<%BusinessProfile%>"><%BusinessProfile%></a></div>
+                    </div>
+            </div>
+        </div>
+    </div>
